@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* container */
+.cse .gsc-control-cse, .gsc-control-cse { background-color: inherit; border: none; padding: 0; }
+	
+/* results */
+.gsc-results-wrapper-nooverlay { display: none; } /* Win/firefox hack */
+.gsc-results-wrapper-nooverlay.gsc-results-wrapper-visible { display: block; }  /* Win/firefox hack */
+.gsc-results-wrapper-visible { background-color: #fff; border-left: 1px solid #ccc; border-bottom: 2px solid #ccc; }
+.gsc-adBlock { display: none !important; } 
+.gsc-wrapper { max-height: 600px; overflow-y: scroll; }
+.cse .gsc-results, .gsc-results { margin-top: 0; }
+
+/* single result */
+.cse .gsc-webResult.gsc-result, .gsc-webResult.gsc-result, .gsc-imageResult-classic, .gsc-imageResult-column { border-left: none; border-bottom: 1px solid #ebebeb; margin-bottom: 0; padding: 10px 4px; } 
+.cse .gsc-webResult.gsc-result:hover, .gsc-webResult.gsc-result:hover, .gsc-webResult.gsc-result.gsc-promotion:hover, .gsc-results .gsc-imageResult-classic:hover, .gsc-results .gsc-imageResult-column:hover { border-left: none; background-color: #e0f0ff; border-bottom: 1px solid #ccc; }
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * { font-size: 13px; line-height: 1.1; padding-bottom: 6px; }
+.gsc-result .gs-title { height: inherit; overflow: inherit; }
+.cse .gs-result .gs-snippet, .gs-result .gs-snippet, .cse .gs-spelling-original, .gs-spelling-original { font-size: 11px; line-height: 1.3; }
+.gsc-url-bottom { display: none; }

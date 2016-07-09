@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!–[if lt IE9]> 
+		<script type="text/javascript" src="js/html5.js"></script>
+		<![endif]–>
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Brainnetome Atlas | Download</title>
+		<link rel = "Shortcut Icon" href="images/ba/favicon.ico">
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<meta http-equiv="Description" content="Brainnetome Atlas" />
+		<meta http-equiv="Keywords" content="Brainnetome Atlas, Brainnetome, atlas, brain mapping, brain connectivity, neuroimaging, functional MRI,  parcellation, connectivity based parcellation brain atlas" />
+		<!-- InstanceEndEditable -->
+		<link href="css/hcpv.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript">
+			function validateEmail(email) {
+			  var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return re.test(email);
+		  }
+			function isEmail(str)
+			{
+				var reg=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+				return reg.test(str);
+			}
+			function validate()
+			{
+				var thename=document.getElementById("register_1").value;
+				var thecou=document.getElementById("register_2").value;
+				var theins=document.getElementById("register_3").value;
+				var theemail=document.getElementById("register_4").value;
+				if(thename.length<=0)
+					alert("Name can not be null!");
+				else if(thecou.length<=0)
+					alert("Country can not be null!");
+				else if(theins.length<=0)
+					alert("Institution can not be null!");
+				else if(theemail.length<=0)
+					alert("Email can not be null!");
+				else if(validateEmail(theemail)==0)
+					alert("Email is not right");
+				else	
+				{	
+					document.forms[0].submit();
+				}
+			}
+		</script>
+		
+	
+	</head>
+	
+
+<body>
+	
+<!-- site container -->
+<div id="site_container">
+
+	<!-- Header -->
+	<div id="header">
+		<div id="header_nav">
+			<a href="http://www.ia.cas.cn/" target="_blank"><span>CASIA</span></a><span> | </span>
+			<a href="http://www.brainnetome.org/" target="_blank"><span>Brainnetome Center</span></a><span> | </span>
+			<a href="contacts.html" target="_blank"><span>Contact Us</span></a>
+		</div>
+		<div id="header_logo"></div>
+	</div> <!-- end Header -->
+
+	<!-- top level navigation -->
+	<div id="topnav">
+		<ul id="navigation" class="navigation">
+			<li id="menu-item-4061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4061"><a href=""><span>Home</span></a></li>
+			<li id="menu-item-4097" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4097"><a href="bnatlas.html"><span>Atlas</span></a></li>
+			<li id="menu-item-4058" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-4058"><a href="download.html"><span>Download</span></a></li>
+			<li id="menu-item-4124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4124"><a href="publications.html"><span>Publications</span></a></li>
+			<li id="menu-item-4130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4130"><a href="faqs.html"><span>FAQs</span></a></li>
+			<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><a href="contacts.html"><span>Contacts</span></a></li>
+			<li id="menu-item-4909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4909"><a href="brainnetome.html"><span>Brainnetome</span></a></li>
+			<!-- <li id="wiki" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4055"><a href="wiki/home"><span>Discussion</span></a></li> -->
+		</ul>
+		<div class="cl"></div>
+	</div>
+	<div id="search"></div> <!-- Search box -->
+	<!-- End Nav -->
+
+	<!-- "Middle" area contains all content between the top navigation and the footer -->
+	<div id="middle">
+		  <!-- the left Main Content" -->
+		  <div id="content" class="editable"> 
+			    <div id="cse" style="width:100%; display:none;"></div>
+			    <h2><strong>Brainnetome Atlas Viewer (V1.0)</strong></h2>
+			    <p>Brainnetome Atlas Viewer(V1.0) shows the anatomical connectivity-based parcellation results, including the MPM maps,probabilistic maps and both the anatomical and functional connectivity patterns, which have been developed in the teams of in Brainnetome Center, CASIA. They are based on the analysis of connectional architecture with in vivo multi-modal MRI data during the last 3 years. The Brainnetome Center at CASIA is home of the Brainnetome Atlas Viewer(V.10). If you would like to download the atlas,please make sure you first read the legal agreement.</p>
+			    <p>Brainnetome Atlas Viewer was developed using MATLAB with a user-friendly GUI. The toolkit included functions of NIfTI package for loading NIfTI and Analyze format files. This toolkit had been successfully tested under a variety of operating systems with MATLAB installed, including Windows, Linux (Ubuntu and CentOS). Brainnetome atlas Viewer was designed as the following procedure (see the Figure for a flowchart). First, users started the software in the command line of MATLAB. Then, an easy-to-use interface would show up, including the basic options for visualization of the atlas (such as the choice of background template). Users could view the whole atlas (maximum probabilistic map, MPM) and select a specific region for details. Subsequently, the toolkit would draw the selected region. If there were published papers about the selected region, users could visit the corresponding papers in Pubmed via the default browser. For the connectivity pattern for the region, users could check the activated checkboxes for functional/structural connectivity in two/three dimension. In addition, the brain region and connectivity pattern could be yoked together selected the corresponding checkbox. Finally, users could shut down any window by canceling the corresponding checkbox. For a specific brain region, Brainnetome atlas also provides the probabilistic map (PM) describing the frequency with which each voxel of the specific area was observed in the samples. The toolkit included the function for demonstrating the PM (using the specific probability as threshold to mask and save the PM; showing the corresponding label, from other atlas, of each voxel in PM).</p>
+			    <p><img src="images/cover/software1.png" alt="" name="screenshot" width="526" height="461" id="screenshot2" /></p>
+			    <p><img src="images/cover/software2.png" alt="" name="screenshot" width="526" height="421" id="screenshot2" /></p>
+			</div><!-- End the left Main Content" --> 
+	
+	 
+			<!-- the right sidebar of middle Content" -->
+			<div id="sidebar-rt">
+		      <!-- InstanceBeginEditable name="Sidebar Content" -->
+	        <div id="sidebar-content" class="editable">
+	        	<a name="a"></a>
+						<div class="sidebox">
+				        <h2 style="border-bottom:1px solid #cb6; padding-bottom:10px;margin-bottom:10px;">Please read the following legal agreement:</h2>
+				        <p>The information, images and data on this website are the property of the Brainetome Center. Our center is willing to make this information available to researchers, scientists and others at colleges, universities, not-for-profit foundations and other similar institutions free of charge, subject to proper attribution and an agreement to share alike, for use for non-commercial purposes. Brainetome Center will consider granting a license to individuals and entities that wish to use the information, images and data for commercial purposes. Such requests should be made to Dr. Lingzhong Fan by e-mail:<a href="#">brainnetome.atlas@nlpr.ia.ac.cn</a></p><br />
+		        </div>
+		        <div class="sidebox-bottom"></div>  
+		        <a name="b"></a>
+					<div class="sidebox">
+						 <h2>Get Brainnetome Atlas Viewer </h2>
+						  <div><form name="form_register" id="form_register" action="" method="POST">
+						<table style="width:220px;">
+							<tr>
+								<td style="width:55px;"><strong>Name*</strong></td>
+								<td><input type="text" id="register_1" name="name" value="" style="width:160px; margin:2px 0 0 5px;"></td>
+							</tr>
+							<tr>
+								<td style="width:55px;"><strong>Country*</strong></td>
+								<td><input type="text" id="register_2" name="cou" value="" style="width:160px; margin:2px 0 0 5px;"></td>
+							</tr>
+							<tr>
+								<td style="width:55px;"><strong>Institution*</strong></td>
+								<td><input id="register_3" style="width:160px; margin:2px 0 0 5px;" type="text" name="ins" value="" ></td>
+							</tr>
+							<tr>
+								<td style="width:55px;"><strong>Email*</strong></td>
+								<td><input id="register_4" style="width:160px; margin:2px 0 0 5px;" type="text" name="email" value="" ></td>
+							</tr>
+							<tr>
+								<td style="text-align:right;"><input type="reset" value="Reset"></td>
+								<td style="text-align:center;"><input type="button" name="b_sendmail" value="Register" id="b_sendmail" onClick="validate()"></td>
+								
+							</tr>
+						</table>
+						</form>
+						</div>
+					</div>
+					<div class="sidebox-bottom"> </div>
+					<p>&nbsp;</p>
+	        </div> 
+	    </div> <!-- end the right sidebar of middle Content" -->
+	    
+	</div> <!-- middle -->
+
+
+	<!-- footer -->
+	<div id="footer">
+		<div id="footer_nav">
+			<div id="nav_brainnetomeAtlasOverview"  class="children" style="width:210px;">
+				<h2>Brainnetome Atlas</h2>
+				<p>Brainnetome atlas will be an in vivo map, with more fine-grained functional brain subregions and detailed anatomical and functional connection patterns for each area, which could help researchers to
+	more accurately describe the locations of the activation or connectivity in the brain…<a href="brainnetome.html" style="color: #DDDDDD">more</a></p>
+			</div>
+			<div id="nav_getInTouch"  class="children">
+				<h2>Get in Touch</h2>
+				<p>Brainnetome Center
+				<p>National Laboratory of Pattern Recognition, Institute of Automation, The Chinese Academy of Sciences, 100190, PR China</p>
+				<p>Telephone: +(86) 010-8254 4778
+				<br>Fax:+ (86) 010-6255 1993
+				<br>Email:<a href ="mailto:brainnetome.atlas@nlpr.ia.ac.cn?subject=[Brainnetome Contact]">brainnetome.atlas@nlpr.ia.ac.cn </a></p>
+			</div>
+			<div id="nav_relatedDownload"  class="children">
+				<h2>Related Download</h2>
+				<ul>
+	      	<li><a href="http://www.nitrc.org/projects/bn_atlas" target="_blank">Brainnetome Atlas @NITRC</a></li>
+	        <li><a href="http://www.fil.ion.ucl.ac.uk/spm/ext/#Brainnetome" target="_blank">Brainnetome Atlas @SPM</a></li>
+	        <li><a href="http://atlas.brainnetome.org/BrainBrowser/SurfaceViewer.html" target="_blank">Brainnetome Atlas @BrainBrowser</a></li>
+			<li><a href="https://scalablebrainatlas.incf.org/human/BNA" target="_blank">Brainnetome Atlas @Scalable Brain Atlas</a></li>
+			  </ul>
+			</div>
+			<div id="nav_affiliations"  class="children">
+				<h2>Affiliations</h2>
+				<ul>
+	      	<li><a href="http://www.brainnetome.org/" target="_blank">Brainnetome Center</a></li>
+			    <li><a href="http://www.nlpr.ia.ac.cn/english/" target="_blank">National Laboratory of Pattern Recognition (NLPR)</a></li>
+			    <li><a href="http://www.ia.cas.cn/" target="_blank">Institute of Automation,The Chinese Academy of Sciences (CASIA)</a></li>
+			  </ul>
+			</div>
+			
+		</div>
+		
+	</div><!-- End footer -->
+	
+</div><!-- End site container -->
+
+
+<div id="footer_right">
+	 <p>Copyright © 2014 Brainnetome Center. Institute of Automation.Chinese Academy of Sciences. All rights reserved. (Browser: IE9 and above)</p>
+</div>
+
+<script type="text/javascript"> 
+function request(paras){ 
+	var url = location.href;  
+	var paraString = url.substring(url.indexOf("?")+1,url.length).split("&");  
+	var paraObj = {}  
+	for (i=0; j=paraString[i]; i++){  
+		paraObj[j.substring(0,j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=")+1,j.length);  
+	}  
+	var returnValue = paraObj[paras.toLowerCase()];  
+	if(typeof(returnValue)=="undefined"){  
+		return "";  
+	}else{  
+		return returnValue;  
+	}  
+} 
+var thename=request('name'); 
+var thecou=request('cou'); 
+var theins=request('ins'); 
+var theemail=request('email'); 
+document.getElementById("register_1").value=thename;
+document.getElementById("register_2").value=thecou;
+document.getElementById("register_3").value=theins;
+document.getElementById("register_4").value=theemail;
+</script>
+</body>
+</html>
+

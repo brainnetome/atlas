@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Galleria Classic Theme</title>
+        <script src="../../../jquery-1.4.2.min.js"></script>
+        <script src="../../galleria.js"></script>
+        <style>
+
+            .content{color:#eee;font:14px/1.4 "helvetica neue", arial,sans-serif;width:620px;margin:20px auto}
+            h1{line-height:1.1;letter-spacing:-1px;}
+            #galleria{height:600px;width:800px;}
+        </style>
+    </head>
+<body>
+    <div class="content">
+        <h1>Galleria Classic Theme</h1>
+        
+        <div id="galleria">
+        <img src="../../../../imgs/IMG_0286.jpg" alt="光岳楼">
+        <img src="../../../../imgs/DSCN4053.jpg" alt="Another text">
+        </div>
+    </div>
+    <script>
+    // Load the classic theme
+    Galleria.loadTheme('galleria.classic.js');
+    // Initialize Galleria
+    $('#galleria').galleria();
+    </script>
+    </body>
+</html>

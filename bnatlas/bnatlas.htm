@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brainnetome Atlas</title>
+  <script type="text/javascript" src="data_centers.json"></script>
+	<script type="text/javascript" src="Chart.js"></script>
+	<script type="text/javascript" src="Chart.HorizontalBar.js"></script>
+  <script type="text/javascript" src="bnatlasviewer.js"></script>
+</head>
+<body style="overflow:hidden;">
+
+<div style="float:left;">
+  <div id="canvas-container" style="padding:20px;float:left;">
+	<div id="container-y" class="figure" 
+		 style="margin:5px;width:181px;height:181px;position:relative;float:left;">
+	  <canvas id="display-y" class="slice-display"></canvas>
+  	  <img id="display-y-img-phony" src="mask-1-001.png" usemap="#map-1-90"
+		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
+	  <div style="display:none;margin:0px;width:181px;height:181px;">
+		<img id="display-y-img" src="imgseq-y.png">
+		<img id="display-y-img-bg" src="imgseq-y-bg.png">
+	  </div>
+	</div>
+	<div id="container-x" class="figure" 
+		 style="margin:5px;width:217px;height:181px;position:relative;margin-left:195px;">
+  	  <canvas id="display-x" class="slice-display"></canvas>
+  	  <img id="display-x-img-phony" src="mask-0-001.png" usemap="#map-0-90"
+		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
+  	  <div style="display:none;margin:0px;width:217px;height:181px;">
+  		<img id="display-x-img" src="imgseq-x.png">
+  		<img id="display-x-img-bg" src="imgseq-x-bg.png">
+  	  </div>
+	</div>
+	<div id="container-z" class="figure" 
+		 style="margin:5px;width:181px;height:217px;position:relative;clear:both;float:left;">
+  	  <canvas id="display-z" class="slice-display"></canvas>
+  	  <img id="display-z-img-phony" src="mask-2-001.png" usemap="#map-2-90"
+		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
+   	  <div style="display:none;margin:0px;width:181px;height:217px;">
+  		<img id="display-z-img" src="imgseq-z.png">
+  		<img id="display-z-img-bg" src="imgseq-z-bg.png">
+  	  </div>
+	</div>
+	<div style="padding-top:20px;margin-left:195px;">
+	  <button id="toggle-area-map">display labels</button><span id="status"></span><br>
+	  <button id="lessOpacity">-</button>
+	  <button id="moreOpacity">+</button><span id="opacity"></span><br>
+	  <button id="toggle-fiber">show fiber</button><span id="fiber-status">probabilistic</span><br>
+	  <span id="label"></span>
+	</div>
+	<div style="padding:10px 0 0 0;clear:both;">
+	  <p id="log"></p><br>
+	  <p id="log2"></p><br>
+	  <span>Copyright (C) Brainnetome Center, CASIA</span>
+	</div>
+  </div>
+  <div>
+	<img id="display-splash" src="loading.gif"
+  		 style="opacity:1;position:absolute;left:20px;top:30px;padding:0px;border:0px;width:420px;">
+  </div>
+</div>
+<div style="padding:20px;margin-left:480px;width:40%;">
+  <canvas id="behavior_barchart" height="450" width="600"></canvas>
+</div>
+
+<!--
+<div id="canvas-container-fiber" style="padding:20px;margin-left:450px;">
+	<div id="container-den" class="figure" style="margin:5px;width:240px;height:200px;position:relative;float:left;">
+		<canvas id="display-den" class="slice-display" width="240px" height="200px"></canvas>
+		<canvas id="display-fib" class="slice-display" width="240px" height="200px" 
+						style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;"></canvas>
+		<div style="display:none;margin:0px;width:360px;height:300px;">
+			<img id="display-fib-img-1" src="images/fib-001.jpg">
+			<img id="display-fib-img-2" src="images/fib-002.jpg">
+			<img id="display-fib-img-3" src="images/fib-003.jpg">
+			<img id="display-fib-img-4" src="images/fib-004.jpg">
+			<img id="display-fib-img-5" src="images/fib-005.jpg">
+			<img id="display-fib-img-6" src="images/fib-006.jpg">
+			<img id="display-fib-img-7" src="images/fib-007.jpg">
+			<img id="display-fib-img-8" src="images/fib-008.jpg">
+			<img id="display-fib-img-9" src="images/fib-009.jpg">
+			<img id="display-fib-img-10" src="images/fib-010.jpg">
+			<img id="display-fib-img-11" src="images/fib-011.jpg">
+			<img id="display-fib-img-12" src="images/fib-012.jpg">
+			<img id="display-fib-img-13" src="images/fib-013.jpg">
+			<img id="display-fib-img-14" src="images/fib-014.jpg">
+			<img id="display-fib-img-15" src="images/fib-015.jpg">
+			<img id="display-fib-img-16" src="images/fib-016.jpg">
+			<img id="display-fib-img-17" src="images/fib-017.jpg">
+			<img id="display-fib-img-18" src="images/fib-018.jpg">
+			<img id="display-fib-img-19" src="images/fib-019.jpg">
+			<img id="display-fib-img-20" src="images/fib-020.jpg">
+			<img id="display-fib-img-21" src="images/fib-021.jpg">
+			<img id="display-fib-img-22" src="images/fib-022.jpg">
+			<img id="display-fib-img-23" src="images/fib-023.jpg">
+			<img id="display-fib-img-24" src="images/fib-024.jpg">
+			<img id="display-fib-img-25" src="images/fib-025.jpg">
+			<img id="display-fib-img-26" src="images/fib-026.jpg">
+			<img id="display-fib-img-27" src="images/fib-027.jpg">
+			<img id="display-fib-img-29" src="images/fib-029.jpg">
+			<img id="display-fib-img-30" src="images/fib-030.jpg">
+			<img id="display-fib-img-31" src="images/fib-031.jpg">
+			<img id="display-fib-img-32" src="images/fib-032.jpg">
+			<img id="display-fib-img-33" src="images/fib-033.jpg">
+			<img id="display-fib-img-34" src="images/fib-034.jpg">
+			<img id="display-fib-img-35" src="images/fib-035.jpg">
+			<img id="display-fib-img-36" src="images/fib-036.jpg">
+			<img id="display-fib-img-37" src="images/fib-037.jpg">
+			<img id="display-fib-img-38" src="images/fib-038.jpg">
+			<img id="display-fib-img-39" src="images/fib-039.jpg">
+			<img id="display-fib-img-40" src="images/fib-040.jpg">
+		</div>
+		<div style="display:none;margin:0px;width:360px;height:300px;">
+			<img id="display-den-img-1" src="images/den-001.jpg">
+			<img id="display-den-img-2" src="images/den-002.jpg">
+			<img id="display-den-img-3" src="images/den-003.jpg">
+			<img id="display-den-img-4" src="images/den-004.jpg">
+			<img id="display-den-img-5" src="images/den-005.jpg">
+			<img id="display-den-img-6" src="images/den-006.jpg">
+			<img id="display-den-img-7" src="images/den-007.jpg">
+			<img id="display-den-img-8" src="images/den-008.jpg">
+			<img id="display-den-img-9" src="images/den-009.jpg">
+			<img id="display-den-img-10" src="images/den-010.jpg">
+			<img id="display-den-img-11" src="images/den-011.jpg">
+			<img id="display-den-img-12" src="images/den-012.jpg">
+			<img id="display-den-img-13" src="images/den-013.jpg">
+			<img id="display-den-img-14" src="images/den-014.jpg">
+			<img id="display-den-img-15" src="images/den-015.jpg">
+			<img id="display-den-img-16" src="images/den-016.jpg">
+			<img id="display-den-img-17" src="images/den-017.jpg">
+			<img id="display-den-img-18" src="images/den-018.jpg">
+			<img id="display-den-img-19" src="images/den-019.jpg">
+			<img id="display-den-img-20" src="images/den-020.jpg">
+			<img id="display-den-img-21" src="images/den-021.jpg">
+			<img id="display-den-img-22" src="images/den-022.jpg">
+			<img id="display-den-img-23" src="images/den-023.jpg">
+			<img id="display-den-img-24" src="images/den-024.jpg">
+			<img id="display-den-img-25" src="images/den-025.jpg">
+			<img id="display-den-img-26" src="images/den-026.jpg">
+			<img id="display-den-img-27" src="images/den-027.jpg">
+			<img id="display-den-img-29" src="images/den-029.jpg">
+			<img id="display-den-img-30" src="images/den-030.jpg">
+			<img id="display-den-img-31" src="images/den-031.jpg">
+			<img id="display-den-img-32" src="images/den-032.jpg">
+			<img id="display-den-img-33" src="images/den-033.jpg">
+			<img id="display-den-img-34" src="images/den-034.jpg">
+			<img id="display-den-img-35" src="images/den-035.jpg">
+			<img id="display-den-img-36" src="images/den-036.jpg">
+			<img id="display-den-img-37" src="images/den-037.jpg">
+			<img id="display-den-img-38" src="images/den-038.jpg">
+			<img id="display-den-img-39" src="images/den-039.jpg">
+			<img id="display-den-img-40" src="images/den-040.jpg">
+		</div>
+	</div>
+	<div id="container-den" class="figure" style="margin:5px;width:240px;height:200px;">
+		<canvas id="display-den" class="slice-display" width="240px" height="200px"></canvas>
+		<div style="display:none;margin:0px;">
+			<img id="display-fun-img-1" src="images/fun-001.jpg">
+			<img id="display-fun-img-2" src="images/fun-002.jpg">
+			<img id="display-fun-img-3" src="images/fun-003.jpg">
+			<img id="display-fun-img-4" src="images/fun-004.jpg">
+			<img id="display-fun-img-5" src="images/fun-005.jpg">
+			<img id="display-fun-img-6" src="images/fun-006.jpg">
+			<img id="display-fun-img-7" src="images/fun-007.jpg">
+			<img id="display-fun-img-8" src="images/fun-008.jpg">
+			<img id="display-fun-img-9" src="images/fun-009.jpg">
+			<img id="display-fun-img-10" src="images/fun-010.jpg">
+			<img id="display-fun-img-11" src="images/fun-011.jpg">
+			<img id="display-fun-img-12" src="images/fun-012.jpg">
+			<img id="display-fun-img-13" src="images/fun-013.jpg">
+			<img id="display-fun-img-14" src="images/fun-014.jpg">
+			<img id="display-fun-img-15" src="images/fun-015.jpg">
+			<img id="display-fun-img-16" src="images/fun-016.jpg">
+			<img id="display-fun-img-17" src="images/fun-017.jpg">
+			<img id="display-fun-img-18" src="images/fun-018.jpg">
+			<img id="display-fun-img-19" src="images/fun-019.jpg">
+			<img id="display-fun-img-20" src="images/fun-020.jpg">
+			<img id="display-fun-img-21" src="images/fun-021.jpg">
+			<img id="display-fun-img-22" src="images/fun-022.jpg">
+			<img id="display-fun-img-23" src="images/fun-023.jpg">
+			<img id="display-fun-img-24" src="images/fun-024.jpg">
+			<img id="display-fun-img-25" src="images/fun-025.jpg">
+			<img id="display-fun-img-26" src="images/fun-026.jpg">
+			<img id="display-fun-img-27" src="images/fun-027.jpg">
+			<img id="display-fun-img-29" src="images/fun-029.jpg">
+			<img id="display-fun-img-30" src="images/fun-030.jpg">
+			<img id="display-fun-img-31" src="images/fun-031.jpg">
+			<img id="display-fun-img-32" src="images/fun-032.jpg">
+			<img id="display-fun-img-33" src="images/fun-033.jpg">
+			<img id="display-fun-img-34" src="images/fun-034.jpg">
+			<img id="display-fun-img-35" src="images/fun-035.jpg">
+			<img id="display-fun-img-36" src="images/fun-036.jpg">
+			<img id="display-fun-img-37" src="images/fun-037.jpg">
+			<img id="display-fun-img-38" src="images/fun-038.jpg">
+			<img id="display-fun-img-39" src="images/fun-039.jpg">
+			<img id="display-fun-img-40" src="images/fun-040.jpg">
+		</div>
+	</div>
+</div>
+
+-->
+
+<div id="map-container">
+
+
+
+</div>
+
+</body>
+</html>

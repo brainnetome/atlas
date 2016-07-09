@@ -1,0 +1,1267 @@
+{
+"1": {
+"Action.Execution.Speech": 1.67, 
+"Cognition.Language.Phonology": 1.58, 
+"Cognition.Language.Semantics": 1.57, 
+"Cognition.Language.Speech": 1.55, 
+"Cognition.Memory.Working": 1.48
+}, 
+"2": {
+"Action.Inhibition": 1.31, 
+"Cognition.Attention": 1.35, 
+"Cognition.Memory.Working": 1.93, 
+"Perception.Vision.Motion": 1.58
+}, 
+"3": {
+"Cognition": 1.92, 
+"Cognition.Memory.Explicit": 1.48, 
+"Cognition.Social_Cognition": 1.61, 
+"Emotion": 2.73
+}, 
+"4": {
+"Cognition.Social_Cognition": 3.16
+}, 
+"5": {
+"Cognition.Memory.Explicit": 4.97, 
+"Cognition.Social_Cognition": 2.14, 
+"Emotion": 2.24
+}, 
+"6": {
+"Cognition.Social_Cognition": 5.07, 
+"Emotion": 1.82, 
+"Emotion.Sadness": 3.33
+}, 
+"7": {
+"Action.Execution": 2.24, 
+"Action.Imagination": 1.57, 
+"Action.Motor_Learning": 2.73, 
+"Cognition.Memory.Working": 3.2, 
+"Cognition.Space": 2.44, 
+"Perception.Vision.Motion": 1.73, 
+"Perception.Vision.Shape": 4.25
+}, 
+"8": {
+"Action.Execution": 2.76, 
+"Action.Inhibition": 1.97, 
+"Action.Motor_Learning": 1.47, 
+"Cognition.Attention": 6.39, 
+"Cognition.Memory.Working": 2.72, 
+"Perception.Vision.Motion": 1.76
+}, 
+"9": {
+"Action.Execution": 3.4, 
+"Action.Imagination": 1.62, 
+"Perception.Vision.Motion": 2.04
+}, 
+"10": {
+"Action.Execution": 3.35, 
+"Action.Imagination": 2.27, 
+"Action.Inhibition": 2.77, 
+"Action.Motor_Learning": 1.68, 
+"Perception.Somesthesis": 2.71, 
+"Perception.Vision.Motion": 1.71
+}, 
+"11": {
+"Cognition.Memory.Explicit": 1.71
+}, 
+"12": {
+"Action.Inhibition": 1.55, 
+"Cognition": 2.12, 
+"Cognition.Attention": 1.37, 
+"Emotion": 1.43
+}, 
+"13": {
+"Cognition": 4.04, 
+"Cognition.Memory.Explicit": 4.32, 
+"Cognition.Social_Cognition": 1.57, 
+"Emotion": 2.13, 
+"Emotion.Sadness": 1.57
+}, 
+"14": {
+"Cognition.Social_Cognition": 3.99, 
+"Emotion": 1.96, 
+"Emotion.Happiness": 4.99, 
+"Emotion.Sadness": 3.27
+}, 
+"15": {
+"Action.Inhibition": 2.68, 
+"Cognition.Social_Cognition": 2.13
+}, 
+"16": {
+"Action.Inhibition": 1.5, 
+"Cognition.Attention": 3.02, 
+"Cognition.Memory.Working": 1.87
+}, 
+"17": {
+"Cognition.Language.Phonology": 1.82, 
+"Cognition.Language.Semantics": 1.8, 
+"Cognition.Memory.Explicit": 1.63, 
+"Cognition.Memory.Working": 1.45
+}, 
+"18": {
+"Action.Inhibition": 1.89, 
+"Cognition.Attention": 1.88, 
+"Cognition.Memory.Working": 2.6, 
+"Cognition.Reasoning": 2.66
+}, 
+"19": {
+"Action.Inhibition": 2.8, 
+"Cognition": 1.55, 
+"Cognition.Memory.Explicit": 1.43, 
+"Cognition.Memory.Working": 1.88, 
+"Cognition.Social_Cognition": 2.13, 
+"Emotion": 1.85, 
+"Interoception.Sexuality": 1.66
+}, 
+"20": {
+"Action.Inhibition": 1.68, 
+"Cognition.Memory.Working": 2.44, 
+"Cognition.Social_Cognition": 2.77
+}, 
+"21": {
+"Cognition.Memory.Working": 2.31, 
+"Cognition.Reasoning": 2.15
+}, 
+"22": {
+"Cognition.Memory.Working": 2.35, 
+"Perception.Somesthesis.Pain": 1.7
+}, 
+"23": {
+"Cognition.Memory.Explicit": 1.71
+}, 
+"24": {
+"Action.Inhibition": 1.89, 
+"Cognition.Memory.Explicit": 2.57, 
+"Cognition.Memory.Working": 1.66, 
+"Cognition.Reasoning": 2.24
+}, 
+"25": {
+"Action.Execution": 3.55, 
+"Action.Motor_Learning": 3.14, 
+"Cognition.Memory.Working": 1.78, 
+"Cognition.Space": 1.95, 
+"Perception.Vision": 2.16, 
+"Perception.Vision.Motion": 1.46
+}, 
+"26": {
+"Action.Inhibition": 2.21, 
+"Action.Motor_Learning": 2.1, 
+"Action.Preparation": 4.48, 
+"Cognition.Memory.Working": 2.68, 
+"Cognition.Reasoning": 3.15, 
+"Cognition.Space": 2.41, 
+"Perception.Vision.Motion": 2.35
+}, 
+"27": {}, 
+"28": {
+"Cognition.Memory.Explicit": 1.94
+}, 
+"29": {
+"Cognition.Language.Phonology": 1.55, 
+"Cognition.Language.Semantics": 2.27, 
+"Cognition.Language.Speech": 3.68, 
+"Cognition.Language.Syntax": 1.65, 
+"Cognition.Memory.Working": 3.92
+}, 
+"30": {
+"Cognition.Attention": 1.52, 
+"Cognition.Reasoning": 2.35
+}, 
+"31": {
+"Cognition.Language.Phonology": 1.85, 
+"Cognition.Language.Semantics": 2.41, 
+"Cognition.Language.Speech": 1.54, 
+"Cognition.Language.Syntax": 2.8, 
+"Cognition.Memory.Explicit": 3.7
+}, 
+"32": {}, 
+"33": {
+"Cognition.Language.Semantics": 3.55, 
+"Cognition.Language.Speech": 1.65, 
+"Cognition.Language.Syntax": 2.2, 
+"Cognition.Memory.Explicit": 3.84
+}, 
+"34": {}, 
+"35": {
+"Cognition.Language": 5.43, 
+"Cognition.Language.Semantics": 2.55, 
+"Cognition.Language.Speech": 5.04, 
+"Cognition.Language.Syntax": 1.57
+}, 
+"36": {
+"Emotion": 1.79, 
+"Emotion.Disgust": 3.57, 
+"Emotion.Sadness": 3.77
+}, 
+"37": {
+"Cognition.Language.Phonology": 3.21, 
+"Cognition.Language.Semantics": 2.15, 
+"Cognition.Language.Speech": 1.77, 
+"Cognition.Language.Syntax": 1.81, 
+"Emotion.Disgust": 2.15
+}, 
+"38": {
+"Cognition.Time": 3.28, 
+"Perception.Somesthesis.Pain": 2.14
+}, 
+"39": {
+"Action.Imagination": 2.47, 
+"Cognition.Language.Phonology": 2.15, 
+"Cognition.Language.Semantics": 2.6, 
+"Cognition.Language.Speech": 1.63, 
+"Cognition.Music": 2.15
+}, 
+"40": {
+"Action.Observation": 2.56, 
+"Perception.Somesthesis.Pain": 2.12
+}, 
+"41": {
+"Cognition": 2.29, 
+"Emotion": 2.31, 
+"Emotion.Fear": 3.12
+}, 
+"42": {
+"Cognition": 2.39, 
+"Cognition.Social_Cognition": 3.21, 
+"Emotion": 2.3, 
+"Emotion.Fear": 2.44, 
+"Interoception.Sexuality": 5.81, 
+"Perception.Gustation": 4.15
+}, 
+"43": {
+"Cognition.Language.Semantics": 1.58, 
+"Cognition.Memory.Explicit": 4.05, 
+"Emotion": 3.59, 
+"Emotion.Sadness": 1.64, 
+"Perception.Gustation": 1.88
+}, 
+"44": {
+"Emotion": 1.49, 
+"Perception.Gustation": 2.79
+}, 
+"45": {
+"Cognition.Language.Semantics": 1.86, 
+"Emotion": 5.95, 
+"Perception.Gustation": 1.64
+}, 
+"46": {
+"Cognition": 2.74, 
+"Emotion": 1.68, 
+"Perception.Gustation": 8.2, 
+"Perception.Olfaction": 1.91
+}, 
+"47": {
+"Cognition": 2.33, 
+"Cognition.Language.Orthography": 3.06, 
+"Emotion": 2.45
+}, 
+"48": {
+"Cognition": 1.96, 
+"Cognition.Language.Orthography": 3.33, 
+"Emotion": 2.27
+}, 
+"49": {
+"Cognition": 2.6, 
+"Emotion": 2.73, 
+"Emotion.Fear": 3.03, 
+"Emotion.Sadness": 3.13, 
+"Interoception.Sexuality": 6.14, 
+"Perception.Olfaction": 5.5
+}, 
+"50": {
+"Cognition": 2.27, 
+"Emotion": 2.58, 
+"Emotion.Fear": 6.56, 
+"Emotion.Happiness": 3.93, 
+"Emotion.Sadness": 3.88, 
+"Interoception.Sexuality": 3.29, 
+"Perception.Gustation": 3.39
+}, 
+"51": {
+"Cognition.Language.Semantics": 1.46, 
+"Cognition.Memory.Explicit": 1.44, 
+"Emotion": 1.9
+}, 
+"52": {
+"Action.Inhibition": 1.45, 
+"Cognition.Memory.Explicit": 1.91, 
+"Emotion": 1.37
+}, 
+"53": {
+"Action.Execution": 2.49, 
+"Action.Execution.Speech": 2.46
+}, 
+"54": {
+"Action.Execution": 1.97, 
+"Action.Execution.Speech": 2.46, 
+"Cognition.Music": 2.18, 
+"Perception.Vision.Motion": 4.01
+}, 
+"55": {
+"Action.Execution": 2.34, 
+"Action.Imagination": 2.7, 
+"Cognition.Space": 2.3, 
+"Perception.Vision.Motion": 1.87, 
+"Perception.Vision.Shape": 2.64
+}, 
+"56": {
+"Action.Execution": 2.49, 
+"Action.Imagination": 3.0, 
+"Action.Motor_Learning": 3.73, 
+"Action.Observation": 2.62, 
+"Cognition.Soma": 2.72, 
+"Cognition.Space": 3.3, 
+"Interoception": 3.4, 
+"Perception.Vision.Motion": 1.96, 
+"Perception.Vision.Shape": 3.82
+}, 
+"57": {
+"Action.Execution": 4.25, 
+"Perception.Somesthesis": 3.04
+}, 
+"58": {
+"Action.Execution": 3.74, 
+"Action.Motor_Learning": 4.05
+}, 
+"59": {
+"Action.Execution": 33.06, 
+"Interoception": 2.88
+}, 
+"60": {
+"Action.Execution": 3.15
+}, 
+"61": {
+"Action.Execution": 3.08, 
+"Perception.Somesthesis.Pain": 1.7
+}, 
+"62": {
+"Action.Execution": 3.41, 
+"Perception.Somesthesis.Pain": 2.17
+}, 
+"63": {
+"Cognition.Language.Orthography": 2.53, 
+"Cognition.Language.Phonology": 1.33, 
+"Cognition.Language.Semantics": 1.61, 
+"Cognition.Language.Speech": 1.76, 
+"Cognition.Language.Syntax": 2.16, 
+"Cognition.Memory.Working": 1.34
+}, 
+"64": {
+"Action.Execution": 1.39, 
+"Action.Observation": 2.61, 
+"Action.Preparation": 1.86, 
+"Cognition.Space": 1.76
+}, 
+"65": {}, 
+"66": {}, 
+"67": {
+"Action.Execution": 2.87, 
+"Action.Imagination": 4.3
+}, 
+"68": {
+"Action.Execution": 15.26, 
+"Interoception.Bladder": 2.63
+}, 
+"69": {
+"Emotion": 4.91, 
+"Emotion.Disgust": 1.85, 
+"Emotion.Happiness": 6.18
+}, 
+"70": {}, 
+"71": {
+"Action.Execution.Speech": 5.47, 
+"Cognition.Language": 3.06, 
+"Cognition.Language.Phonology": 3.21, 
+"Cognition.Language.Speech": 3.27, 
+"Cognition.Music": 3.09, 
+"Perception.Audition": 1.86
+}, 
+"72": {
+"Action.Execution.Speech": 2.58, 
+"Cognition.Language.Phonology": 3.32, 
+"Cognition.Music": 1.96, 
+"Perception.Audition": 5.67, 
+"Perception.Somesthesis": 3.99
+}, 
+"73": {
+"Action.Execution.Speech": 2.4, 
+"Action.Motor_Learning": 4.04, 
+"Cognition.Language.Phonology": 4.3, 
+"Cognition.Language.Speech": 2.35, 
+"Cognition.Music": 4.85, 
+"Perception.Audition": 1.71
+}, 
+"74": {
+"Action.Execution.Speech": 2.22, 
+"Cognition.Music": 1.79, 
+"Emotion.Anxiety": 3.23, 
+"Perception.Audition": 2.76, 
+"Perception.Somesthesis.Pain": 3.78
+}, 
+"75": {
+"Action.Execution.Speech": 4.14, 
+"Cognition.Language.Phonology": 3.88, 
+"Cognition.Language.Semantics": 2.18, 
+"Cognition.Language.Speech": 2.48, 
+"Cognition.Music": 2.24, 
+"Perception.Audition": 1.65
+}, 
+"76": {
+"Action.Execution.Speech": 4.74, 
+"Cognition.Language": 3.83, 
+"Cognition.Language.Phonology": 3.25, 
+"Cognition.Language.Speech": 4.25, 
+"Cognition.Music": 2.89, 
+"Emotion.Happiness": 4.78, 
+"Perception.Audition": 1.78
+}, 
+"77": {}, 
+"78": {
+"Cognition.Language.Speech": 5.37, 
+"Emotion": 1.59, 
+"Emotion.Anger": 1.54, 
+"Emotion.Disgust": 2.91, 
+"Perception.Gustation": 2.64
+}, 
+"79": {
+"Action.Execution.Speech": 2.49, 
+"Action.Motor_Learning": 2.05, 
+"Cognition.Language": 1.94, 
+"Cognition.Language.Phonology": 3.01, 
+"Cognition.Language.Semantics": 3.54, 
+"Cognition.Language.Speech": 4.53, 
+"Cognition.Music": 2.57, 
+"Emotion.Happiness": 2.67, 
+"Emotion.Sadness": 7.1, 
+"Perception.Audition": 1.46
+}, 
+"80": {
+"Action.Execution.Speech": 5.46, 
+"Cognition.Language.Phonology": 3.2, 
+"Cognition.Language.Semantics": 3.45, 
+"Cognition.Language.Speech": 2.11, 
+"Cognition.Music": 2.68, 
+"Perception.Audition": 1.87
+}, 
+"81": {
+"Cognition.Language.Semantics": 1.99, 
+"Cognition.Memory.Explicit": 3.35, 
+"Cognition.Social_Cognition": 1.9
+}, 
+"82": {
+"Emotion": 1.73
+}, 
+"83": {
+"Cognition.Language": 4.92, 
+"Cognition.Social_Cognition": 10.97
+}, 
+"84": {
+"Cognition.Language": 4.05, 
+"Cognition.Memory.Explicit": 5.96, 
+"Cognition.Social_Cognition": 4.0, 
+"Emotion.Happiness": 2.42
+}, 
+"85": {
+"Cognition.Language.Semantics": 2.46, 
+"Cognition.Language.Syntax": 3.83
+}, 
+"86": {
+"Action.Observation": 3.01
+}, 
+"87": {
+"Cognition.Language.Phonology": 1.79, 
+"Cognition.Language.Semantics": 2.45, 
+"Cognition.Language.Speech": 2.04, 
+"Cognition.Language.Syntax": 1.57, 
+"Cognition.Memory.Explicit": 4.89, 
+"Cognition.Social_Cognition": 2.8, 
+"Perception.Audition": 2.48
+}, 
+"88": {
+"Cognition.Language": 1.53, 
+"Cognition.Language.Semantics": 2.41, 
+"Cognition.Language.Speech": 2.11, 
+"Cognition.Social_Cognition": 3.34, 
+"Cognition.Time": 2.85, 
+"Emotion.Happiness": 3.28, 
+"Perception.Audition": 1.49
+}, 
+"89": {
+"Cognition.Language.Orthography": 4.86, 
+"Cognition.Language.Semantics": 2.81
+}, 
+"90": {
+"Cognition.Memory.Explicit": 4.15
+}, 
+"91": {
+"Cognition.Language.Phonology": 1.71, 
+"Cognition.Language.Semantics": 2.1, 
+"Cognition.Memory.Working": 3.12
+}, 
+"92": {}, 
+"93": {
+"Cognition.Language.Semantics": 2.85
+}, 
+"94": {}, 
+"95": {}, 
+"96": {}, 
+"97": {
+"Action.Observation": 1.79, 
+"Cognition.Language.Semantics": 2.05, 
+"Cognition.Language.Speech": 3.88, 
+"Cognition.Memory.Working": 3.01, 
+"Interoception.Sexuality": 1.75
+}, 
+"98": {
+"Action.Observation": 2.54, 
+"Perception.Vision.Shape": 3.51
+}, 
+"99": {
+"Cognition.Language.Orthography": 3.82, 
+"Cognition.Language.Semantics": 3.18
+}, 
+"100": {}, 
+"101": {
+"Cognition.Language.Semantics": 2.88
+}, 
+"102": {}, 
+"103": {
+"Cognition.Language.Semantics": 3.08, 
+"Cognition.Language.Speech": 1.98, 
+"Cognition.Memory.Explicit": 1.95
+}, 
+"104": {
+"Cognition.Language": 2.72, 
+"Cognition.Language.Semantics": 4.35, 
+"Cognition.Memory.Explicit": 2.14, 
+"Perception.Vision.Shape": 1.76
+}, 
+"105": {
+"Cognition.Language": 2.17, 
+"Cognition.Language.Orthography": 1.84, 
+"Cognition.Language.Semantics": 1.38, 
+"Cognition.Language.Speech": 3.31, 
+"Emotion.Fear": 1.83, 
+"Perception.Vision": 2.39, 
+"Perception.Vision.Shape": 1.62
+}, 
+"106": {
+"Action.Motor_Learning": 1.86, 
+"Cognition.Language": 2.82, 
+"Emotion.Fear": 2.47, 
+"Perception.Vision": 3.86, 
+"Perception.Vision.Shape": 2.46
+}, 
+"107": {
+"Cognition.Language": 2.56, 
+"Cognition.Language.Orthography": 2.56, 
+"Cognition.Language.Phonology": 2.24, 
+"Cognition.Language.Semantics": 2.06, 
+"Cognition.Language.Speech": 2.89, 
+"Perception.Vision.Shape": 1.51
+}, 
+"108": {
+"Action.Observation": 2.23, 
+"Cognition.Language": 2.32, 
+"Cognition.Language.Orthography": 3.91, 
+"Cognition.Language.Semantics": 1.93, 
+"Cognition.Space": 2.11, 
+"Emotion.Anger": 3.57, 
+"Emotion.Fear": 1.83, 
+"Interoception.Sexuality": 2.75, 
+"Perception.Vision": 1.94, 
+"Perception.Vision.Shape": 1.58
+}, 
+"109": {
+"Cognition.Memory.Explicit": 4.48
+}, 
+"110": {}, 
+"111": {
+"Cognition.Memory.Explicit": 2.71
+}, 
+"112": {
+"Cognition.Memory.Explicit": 2.87
+}, 
+"113": {
+"Cognition.Language.Semantics": 3.08, 
+"Cognition.Memory.Explicit": 2.85, 
+"Cognition.Social_Cognition": 3.23
+}, 
+"114": {
+"Cognition.Memory.Explicit": 6.28, 
+"Perception.Gustation": 2.89
+}, 
+"115": {
+"Cognition.Memory.Explicit": 3.81
+}, 
+"116": {
+"Cognition.Memory.Explicit": 4.28
+}, 
+"117": {
+"Emotion": 2.35
+}, 
+"118": {}, 
+"119": {
+"Perception.Vision": 5.34
+}, 
+"120": {
+"Cognition.Memory.Explicit": 4.74, 
+"Perception.Vision": 2.69
+}, 
+"121": {
+"Cognition.Language": 2.91, 
+"Cognition.Language.Phonology": 2.86, 
+"Cognition.Language.Semantics": 2.54, 
+"Cognition.Language.Speech": 2.61, 
+"Cognition.Language.Syntax": 2.93, 
+"Perception.Audition": 2.65
+}, 
+"122": {
+"Action.Execution.Speech": 2.32, 
+"Action.Observation": 4.19, 
+"Cognition.Language.Phonology": 2.82, 
+"Cognition.Language.Semantics": 2.69, 
+"Cognition.Language.Speech": 2.84, 
+"Emotion.Happiness": 4.35, 
+"Perception.Audition": 1.84
+}, 
+"123": {
+"Cognition.Language.Orthography": 2.84, 
+"Cognition.Language.Semantics": 2.51, 
+"Cognition.Language.Speech": 4.32, 
+"Cognition.Language.Syntax": 2.38, 
+"Perception.Audition": 1.68
+}, 
+"124": {
+"Perception.Audition": 2.92
+}, 
+"125": {
+"Action.Execution": 3.87, 
+"Action.Imagination": 4.71, 
+"Cognition.Memory.Working": 4.18, 
+"Cognition.Soma": 2.94, 
+"Cognition.Space": 1.95, 
+"Perception.Vision.Motion": 1.96, 
+"Perception.Vision.Shape": 2.9
+}, 
+"126": {
+"Action.Execution": 1.89, 
+"Action.Imagination": 3.26, 
+"Action.Motor_Learning": 2.33, 
+"Cognition.Memory.Working": 2.61, 
+"Cognition.Soma": 9.45, 
+"Cognition.Space": 3.62, 
+"Perception.Vision.Motion": 2.81, 
+"Perception.Vision.Shape": 3.68
+}, 
+"127": {
+"Action.Execution": 3.41, 
+"Action.Preparation": 2.75, 
+"Cognition.Attention": 3.44, 
+"Cognition.Memory.Working": 1.82, 
+"Cognition.Reasoning": 2.1, 
+"Cognition.Space": 1.46, 
+"Perception.Vision.Motion": 1.45, 
+"Perception.Vision.Shape": 1.9
+}, 
+"128": {
+"Action.Execution": 4.42, 
+"Action.Inhibition": 2.08, 
+"Cognition.Attention": 4.46, 
+"Cognition.Memory.Working": 2.4, 
+"Cognition.Space": 1.5, 
+"Perception.Vision.Motion": 1.54, 
+"Perception.Vision.Shape": 2.67
+}, 
+"129": {
+"Action.Execution": 2.45, 
+"Action.Imagination": 1.71, 
+"Action.Observation": 1.51, 
+"Cognition.Attention": 2.35, 
+"Cognition.Memory.Working": 2.22, 
+"Cognition.Soma": 2.53, 
+"Cognition.Space": 1.61, 
+"Perception.Vision.Motion": 1.41, 
+"Perception.Vision.Shape": 2.56
+}, 
+"130": {
+"Action.Execution": 2.19, 
+"Action.Imagination": 7.81, 
+"Action.Motor_Learning": 2.18, 
+"Cognition.Space": 2.74, 
+"Perception.Vision.Motion": 2.35
+}, 
+"131": {
+"Action.Execution": 2.92, 
+"Action.Imagination": 3.44
+}, 
+"132": {}, 
+"133": {
+"Cognition.Attention": 2.13, 
+"Cognition.Memory.Working": 1.76, 
+"Cognition.Reasoning": 1.92, 
+"Cognition.Space": 2.87, 
+"Perception.Vision.Motion": 1.37
+}, 
+"134": {
+"Cognition.Attention": 2.57, 
+"Cognition.Memory.Working": 2.16, 
+"Cognition.Reasoning": 3.76, 
+"Cognition.Space": 1.54, 
+"Interoception.Sexuality": 4.97, 
+"Perception.Vision.Color": 2.64, 
+"Perception.Vision.Motion": 2.89, 
+"Perception.Vision.Shape": 1.48
+}, 
+"135": {
+"Cognition.Memory.Explicit": 2.78, 
+"Cognition.Reasoning": 2.71, 
+"Cognition.Space": 1.64, 
+"Perception.Vision.Shape": 2.32
+}, 
+"136": {
+"Cognition.Social_Cognition": 2.55, 
+"Cognition.Space": 2.07, 
+"Perception.Vision.Motion": 2.18, 
+"Perception.Vision.Shape": 2.29
+}, 
+"137": {
+"Cognition.Memory.Working": 1.88, 
+"Cognition.Reasoning": 2.06, 
+"Cognition.Space": 2.29
+}, 
+"138": {
+"Cognition": 3.03, 
+"Cognition.Attention": 2.58, 
+"Cognition.Memory.Working": 1.35, 
+"Cognition.Reasoning": 1.37, 
+"Cognition.Space": 1.83
+}, 
+"139": {
+"Action.Execution": 1.3, 
+"Action.Imagination": 1.79, 
+"Action.Observation": 1.89, 
+"Cognition.Attention": 1.9, 
+"Cognition.Memory.Working": 2.04, 
+"Cognition.Space": 1.35, 
+"Perception.Somesthesis": 1.5
+}, 
+"140": {
+"Action.Execution": 1.59, 
+"Action.Motor_Learning": 1.87, 
+"Cognition.Memory.Working": 3.4, 
+"Cognition.Space": 1.44, 
+"Cognition.Time": 3.0, 
+"Perception.Somesthesis": 2.25
+}, 
+"141": {
+"Cognition.Social_Cognition": 2.45
+}, 
+"142": {
+"Action.Execution": 1.98, 
+"Action.Inhibition": 1.37, 
+"Cognition.Attention": 2.46, 
+"Interoception.Bladder": 2.99, 
+"Perception.Somesthesis.Pain": 1.43, 
+"Perception.Vision.Motion": 2.1
+}, 
+"143": {
+"Cognition": 1.87, 
+"Cognition.Language": 2.69, 
+"Cognition.Memory.Explicit": 1.46, 
+"Cognition.Social_Cognition": 1.36, 
+"Emotion": 3.47
+}, 
+"144": {
+"Action.Observation": 2.31, 
+"Cognition.Attention": 2.16, 
+"Cognition.Social_Cognition": 1.42
+}, 
+"145": {
+"Action.Execution": 3.2, 
+"Perception.Audition": 2.63, 
+"Perception.Somesthesis": 1.68, 
+"Perception.Somesthesis.Pain": 2.18
+}, 
+"146": {
+"Action.Execution": 3.89, 
+"Perception.Somesthesis": 3.27, 
+"Perception.Somesthesis.Pain": 2.05
+}, 
+"147": {
+"Cognition.Memory.Working": 2.25, 
+"Cognition.Space": 1.94, 
+"Perception.Vision.Motion": 3.2
+}, 
+"148": {
+"Cognition.Memory.Working": 2.34, 
+"Cognition.Space": 2.39, 
+"Perception.Vision.Motion": 2.52
+}, 
+"149": {}, 
+"150": {
+"Cognition.Social_Cognition": 3.34, 
+"Cognition.Space": 3.24
+}, 
+"151": {
+"Cognition.Memory.Explicit": 2.16, 
+"Cognition.Social_Cognition": 2.35
+}, 
+"152": {
+"Cognition.Memory.Explicit": 1.94, 
+"Perception.Vision.Motion": 2.06
+}, 
+"153": {
+"Cognition.Language": 4.86, 
+"Cognition.Memory.Explicit": 4.53, 
+"Cognition.Social_Cognition": 2.41
+}, 
+"154": {
+"Cognition.Memory.Explicit": 2.45, 
+"Cognition.Social_Cognition": 3.11
+}, 
+"155": {
+"Action.Execution": 3.52, 
+"Action.Execution.Speech": 1.81, 
+"Perception.Somesthesis": 2.7
+}, 
+"156": {
+"Action.Execution": 2.74, 
+"Action.Execution.Speech": 4.0, 
+"Perception.Gustation": 2.85
+}, 
+"157": {
+"Action.Execution": 3.21, 
+"Action.Execution.Speech": 2.1, 
+"Perception.Audition": 3.47, 
+"Perception.Somesthesis": 2.42, 
+"Perception.Somesthesis.Pain": 1.7
+}, 
+"158": {
+"Action.Execution": 2.8, 
+"Action.Execution.Speech": 3.47, 
+"Perception.Somesthesis": 2.86, 
+"Perception.Somesthesis.Pain": 1.83
+}, 
+"159": {
+"Action.Execution": 2.65, 
+"Perception.Somesthesis": 2.23
+}, 
+"160": {
+"Action.Execution": 2.3, 
+"Action.Imagination": 3.11, 
+"Perception.Somesthesis": 2.61
+}, 
+"161": {
+"Action.Execution": 3.1, 
+"Perception.Somesthesis": 2.33, 
+"Perception.Somesthesis.Pain": 3.1
+}, 
+"162": {
+"Perception.Somesthesis": 4.09
+}, 
+"163": {
+"Perception.Somesthesis": 2.96, 
+"Perception.Somesthesis.Pain": 5.48
+}, 
+"164": {
+"Perception.Somesthesis.Pain": 4.44
+}, 
+"165": {
+"Cognition": 1.87, 
+"Emotion": 1.79
+}, 
+"166": {
+"Action.Inhibition": 2.85, 
+"Perception.Gustation": 3.32
+}, 
+"167": {}, 
+"168": {
+"Action.Inhibition": 2.39, 
+"Cognition": 1.96, 
+"Perception.Somesthesis.Pain": 1.42
+}, 
+"169": {
+"Emotion.Disgust": 4.76, 
+"Emotion.Fear": 3.01, 
+"Perception.Somesthesis": 5.08, 
+"Perception.Somesthesis.Pain": 3.23
+}, 
+"170": {
+"Emotion.Disgust": 7.4, 
+"Perception.Olfaction": 5.22, 
+"Perception.Somesthesis.Pain": 3.85
+}, 
+"171": {
+"Emotion.Disgust": 2.96, 
+"Interoception.Sexuality": 4.21, 
+"Perception.Gustation": 3.43, 
+"Perception.Somesthesis": 3.06, 
+"Perception.Somesthesis.Pain": 3.54
+}, 
+"172": {
+"Perception.Somesthesis.Pain": 4.41
+}, 
+"173": {
+"Perception.Gustation": 2.89, 
+"Perception.Somesthesis.Pain": 3.84
+}, 
+"174": {
+"Perception.Somesthesis.Pain": 4.99
+}, 
+"175": {
+"Cognition": 1.82, 
+"Cognition.Memory.Explicit": 2.84, 
+"Cognition.Social_Cognition": 1.86, 
+"Emotion": 1.95
+}, 
+"176": {
+"Cognition": 1.86, 
+"Emotion": 1.94
+}, 
+"177": {
+"Emotion": 3.84, 
+"Perception.Somesthesis.Pain": 1.93
+}, 
+"178": {
+"Cognition": 1.76, 
+"Emotion": 1.76
+}, 
+"179": {
+"Cognition": 1.86, 
+"Emotion": 1.83, 
+"Emotion.Sadness": 2.45, 
+"Perception.Gustation": 2.95, 
+"Perception.Somesthesis.Pain": 2.19
+}, 
+"180": {
+"Action.Inhibition": 1.38, 
+"Cognition.Attention": 2.17, 
+"Perception.Olfaction": 3.02
+}, 
+"181": {
+"Cognition.Memory.Explicit": 3.53, 
+"Cognition.Social_Cognition": 3.3
+}, 
+"182": {
+"Cognition": 1.78, 
+"Emotion": 1.97
+}, 
+"183": {
+"Action.Execution": 3.42, 
+"Action.Preparation": 3.77, 
+"Perception.Somesthesis.Pain": 1.83
+}, 
+"184": {
+"Action.Execution": 2.36, 
+"Perception.Somesthesis": 3.9, 
+"Perception.Somesthesis.Pain": 1.56
+}, 
+"185": {}, 
+"186": {
+"Emotion": 1.72
+}, 
+"187": {
+"Cognition": 3.66, 
+"Emotion": 2.06, 
+"Interoception.Sexuality": 1.92, 
+"Perception.Gustation": 4.85
+}, 
+"188": {
+"Cognition": 2.0, 
+"Emotion": 1.85, 
+"Perception.Gustation": 1.8, 
+"Perception.Somesthesis.Pain": 3.96
+}, 
+"189": {
+"Perception.Vision": 2.77, 
+"Perception.Vision.Motion": 2.33
+}, 
+"190": {
+"Action.Observation": 2.73, 
+"Interoception.Hunger": 2.14, 
+"Perception.Vision": 7.92, 
+"Perception.Vision.Motion": 2.49
+}, 
+"191": {
+"Perception.Vision.Motion": 2.41
+}, 
+"192": {}, 
+"193": {
+"Cognition.Language.Semantics": 1.68
+}, 
+"194": {
+"Perception.Vision": 2.66, 
+"Perception.Vision.Motion": 2.16
+}, 
+"195": {}, 
+"196": {}, 
+"197": {
+"Cognition.Memory.Explicit": 1.86
+}, 
+"198": {}, 
+"199": {
+"Cognition.Language.Orthography": 1.82, 
+"Cognition.Space": 2.12, 
+"Perception.Vision": 2.35, 
+"Perception.Vision.Motion": 2.37, 
+"Perception.Vision.Shape": 2.25
+}, 
+"200": {
+"Cognition.Space": 2.33, 
+"Perception.Vision": 2.93, 
+"Perception.Vision.Shape": 3.05
+}, 
+"201": {
+"Action.Observation": 2.0, 
+"Cognition.Space": 4.83, 
+"Interoception.Sexuality": 2.89, 
+"Perception.Vision": 3.74, 
+"Perception.Vision.Motion": 2.01, 
+"Perception.Vision.Shape": 1.87
+}, 
+"202": {
+"Action.Observation": 2.44, 
+"Cognition.Space": 4.24, 
+"Emotion.Disgust": 4.82, 
+"Interoception.Hunger": 4.3, 
+"Interoception.Sexuality": 1.96, 
+"Perception.Vision": 2.4, 
+"Perception.Vision.Motion": 2.36, 
+"Perception.Vision.Shape": 2.35
+}, 
+"203": {
+"Cognition.Language": 1.55, 
+"Cognition.Language.Semantics": 4.16, 
+"Perception.Vision": 2.06
+}, 
+"204": {
+"Action.Observation": 2.41, 
+"Cognition.Language": 2.39, 
+"Cognition.Language.Orthography": 2.14, 
+"Cognition.Language.Semantics": 2.2, 
+"Cognition.Reasoning": 3.76, 
+"Perception.Vision": 1.53, 
+"Perception.Vision.Shape": 2.71
+}, 
+"205": {
+"Cognition.Language.Orthography": 1.92, 
+"Perception.Vision": 3.88, 
+"Perception.Vision.Shape": 3.13
+}, 
+"206": {
+"Cognition.Language.Orthography": 1.72, 
+"Cognition.Space": 2.25, 
+"Perception.Vision": 2.76, 
+"Perception.Vision.Shape": 3.2
+}, 
+"207": {
+"Perception.Vision.Motion": 4.66
+}, 
+"208": {
+"Action.Inhibition": 2.88, 
+"Cognition.Space": 5.45, 
+"Perception.Vision.Motion": 2.57, 
+"Perception.Vision.Shape": 3.73
+}, 
+"209": {
+"Cognition.Attention": 2.81, 
+"Cognition.Memory.Working": 2.92, 
+"Cognition.Reasoning": 3.25, 
+"Cognition.Space": 1.72, 
+"Perception.Vision.Motion": 2.37, 
+"Perception.Vision.Shape": 1.68
+}, 
+"210": {
+"Cognition.Memory.Working": 2.15, 
+"Cognition.Reasoning": 4.74, 
+"Cognition.Space": 2.22, 
+"Perception.Vision": 2.69, 
+"Perception.Vision.Motion": 2.26, 
+"Perception.Vision.Shape": 3.33
+}, 
+"211": {
+"Emotion": 6.32, 
+"Emotion.Disgust": 8.89, 
+"Emotion.Fear": 2.09, 
+"Emotion.Happiness": 7.22, 
+"Emotion.Sadness": 3.93, 
+"Interoception.Sexuality": 8.96, 
+"Perception.Olfaction": 6.37
+}, 
+"212": {
+"Emotion": 2.34, 
+"Emotion.Anger": 5.02, 
+"Emotion.Disgust": 7.87, 
+"Emotion.Fear": 4.16, 
+"Emotion.Sadness": 8.78, 
+"Interoception.Sexuality": 4.36, 
+"Perception.Olfaction": 3.15
+}, 
+"213": {
+"Cognition.Social_Cognition": 7.0, 
+"Emotion": 2.63, 
+"Emotion.Disgust": 4.23, 
+"Emotion.Fear": 2.21, 
+"Emotion.Happiness": 10.12, 
+"Emotion.Sadness": 4.48, 
+"Perception.Olfaction": 5.65
+}, 
+"214": {
+"Cognition": 6.02, 
+"Emotion": 2.93, 
+"Emotion.Anger": 4.76, 
+"Emotion.Disgust": 6.58, 
+"Emotion.Fear": 2.14, 
+"Emotion.Happiness": 3.57
+}, 
+"215": {
+"Cognition.Memory.Explicit": 1.5, 
+"Emotion": 3.17, 
+"Emotion.Disgust": 3.51, 
+"Emotion.Fear": 2.75, 
+"Emotion.Happiness": 3.32, 
+"Emotion.Sadness": 4.88, 
+"Perception.Gustation": 4.49, 
+"Perception.Olfaction": 2.34
+}, 
+"216": {
+"Cognition": 2.65, 
+"Cognition.Memory.Explicit": 1.88, 
+"Emotion": 1.59, 
+"Emotion.Anger": 3.07, 
+"Emotion.Fear": 1.86, 
+"Emotion.Happiness": 5.49, 
+"Interoception.Air-Hunger": 2.79, 
+"Perception.Gustation": 5.9, 
+"Perception.Olfaction": 2.57, 
+"Perception.Vision.Shape": 4.39
+}, 
+"217": {
+"Cognition.Memory.Explicit": 3.51
+}, 
+"218": {
+"Cognition.Memory.Explicit": 1.63, 
+"Emotion": 2.08, 
+"Emotion.Fear": 3.63, 
+"Emotion.Happiness": 3.01
+}, 
+"219": {
+"Cognition": 3.89, 
+"Emotion": 3.08
+}, 
+"220": {
+"Cognition": 3.36, 
+"Emotion": 2.51, 
+"Perception.Gustation": 2.86
+}, 
+"221": {
+"Action.Execution": 2.3, 
+"Action.Imagination": 2.27
+}, 
+"222": {
+"Action.Execution": 2.2, 
+"Action.Imagination": 2.6, 
+"Perception.Vision.Motion": 2.36
+}, 
+"223": {
+"Cognition": 3.29, 
+"Emotion": 2.78, 
+"Emotion.Happiness": 4.51, 
+"Emotion.Sadness": 2.5, 
+"Perception.Gustation": 4.12, 
+"Perception.Olfaction": 3.05
+}, 
+"224": {
+"Cognition": 3.44, 
+"Emotion": 2.8, 
+"Emotion.Fear": 4.67, 
+"Emotion.Sadness": 2.98, 
+"Perception.Gustation": 3.73, 
+"Perception.Olfaction": 2.98
+}, 
+"225": {
+"Action.Execution": 1.5, 
+"Cognition": 1.63, 
+"Emotion": 1.93
+}, 
+"226": {
+"Action.Execution": 1.51, 
+"Cognition": 1.57, 
+"Emotion": 2.06
+}, 
+"227": {
+"Cognition": 1.91, 
+"Emotion": 1.78
+}, 
+"228": {
+"Cognition": 1.61, 
+"Emotion": 1.9, 
+"Interoception.Sexuality": 2.7
+}, 
+"229": {
+"Action.Execution": 2.43, 
+"Perception.Somesthesis.Pain": 1.83
+}, 
+"230": {
+"Action.Execution": 2.45
+}, 
+"231": {
+"Interoception.Bladder": 5.52
+}, 
+"232": {
+"Cognition": 1.47, 
+"Emotion": 1.7, 
+"Perception.Somesthesis.Pain": 1.93
+}, 
+"233": {
+"Action.Execution": 2.62
+}, 
+"234": {
+"Action.Execution": 1.84, 
+"Perception.Somesthesis.Pain": 2.11
+}, 
+"235": {
+"Action.Execution": 3.57
+}, 
+"236": {
+"Action.Execution": 2.84, 
+"Action.Execution.Speech": 2.68
+}, 
+"237": {
+"Cognition": 1.55, 
+"Emotion": 1.77
+}, 
+"238": {
+"Cognition": 1.83, 
+"Emotion": 2.14, 
+"Interoception.Sexuality": 4.45
+}, 
+"239": {
+"Action.Execution": 1.73, 
+"Perception.Vision.Color": 6.88
+}, 
+"240": {
+"Cognition.Attention": 1.71, 
+"Interoception.Sleep": 2.31, 
+"Perception.Somesthesis.Pain": 5.58, 
+"Perception.Vision.Motion": 2.07
+}, 
+"241": {}, 
+"242": {
+"Cognition": 1.97
+}, 
+"243": {}, 
+"244": {
+"Cognition": 3.58, 
+"Perception.Somesthesis.Pain": 1.89
+}, 
+"245": {
+"Action.Execution": 2.03, 
+"Action.Execution.Speech": 1.88, 
+"Perception.Somesthesis.Pain": 2.18
+}, 
+"246": {
+"Perception.Somesthesis.Pain": 2.53
+}
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!–[if lt IE9]> 
+		<script type="text/javascript" src="js/html5.js"></script>
+		<![endif]–>
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Brainnetome Atlas | Atlas</title>
+		<link rel = "Shortcut Icon" href="images/ba/favicon.ico">
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<meta http-equiv="Description" content="Brainnetome Atlas" />
+		<meta http-equiv="Keywords" content="Brainnetome Atlas, Brainnetome, atlas, brain mapping, brain connectivity, brain circuitry, neuroimaging, functional MRI, PET scan" />
+		<!-- InstanceEndEditable -->
+		<link href="css/hcpv.css" rel="stylesheet" type="text/css" />
+		<!-- <script type="text/javascript" src="jquery/js/jquery-ui/jquery-1.9.1.js"></script> -->
+		<script type="text/javascript"  src="js/bnatlasviewer/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bnatlasviewer/bnatlasviewer.js"></script>
+		<script type="text/javascript" src="js/bnatlasviewer/data_centers.json"></script>
+		<script type="text/javascript"  src="js/bnatlasviewer/jstree.min.js"></script>
+		<script type="text/javascript"  src="js/bnatlasviewer/canvasjs.min.js"></script>
+		<link rel="stylesheet" href="css/themes/default/style.min.css" />
+
+	</head>
+
+<body>
+<!-- site container -->
+<div id="site_container">
+
+	<!-- Header -->
+	<div id="header">
+		<div id="header_nav">
+			<a href="http://www.ia.cas.cn/" target="_blank"><span>CASIA</span></a><span> | </span>
+			<a href="http://www.brainnetome.org/" target="_blank"><span>Brainnetome Center</span></a><span> | </span>
+			<a href="contacts.html" target="_blank"><span>Contact Us</span></a>
+		</div>
+		<div id="header_logo"></div>
+	</div> <!-- end Header -->
+
+	<!-- top level navigation -->
+	<div id="topnav">
+		<ul id="navigation" class="navigation">
+			<li id="menu-item-4061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4061"><a href=""><span>Home</span></a></li>
+			<li id="menu-item-4097" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-4097"><a href="bnatlas.html"><span>Atlas</span></a></li>
+			<li id="menu-item-4058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4058"><a href="download.html"><span>Download</span></a></li>
+			<li id="menu-item-4124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4124"><a href="publications.html"><span>Publications</span></a></li>
+			<li id="menu-item-4130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4130"><a href="faqs.html"><span>FAQs</span></a></li>
+			<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><a href="contacts.html"><span>Contacts</span></a></li>
+			<li id="menu-item-4909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4909"><a href="brainnetome.html"><span>Brainnetome</span></a></li>
+			<!-- <li id="wiki" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4055"><a href="wiki/home"><span>Discussion</span></a></li> -->
+		</ul>
+		<div class="cl"></div>
+	</div>
+	<div id="search"></div> <!-- Search box -->
+	<!-- End Nav -->
+
+
+	<!-- "Middle" area contains all content between the top navigation and the footer -->
+	<div id="middle">
+		
+<!-- LEFT: atlas treeview -->
+<div style="position:relative;float:left;padding:10px;width:220px;overflow:auto;height:680px;">
+	<input type="text" id="plugins4_q" value="" class="input" 
+				 style="margin:0em auto 1em auto; display:block; padding:4px; border-radius:4px;">
+	<div style="" id="plugins4" class="demo"></div>
+</div>
+
+<!-- RIGHT: atlas treeview -->
+<div style="position:relative;float:left;padding:0px;">
+
+<!-- panel switch -->
+<div id="panel-switch" style="position:relative;float:left;padding:0px 0px 0px 20px;">
+	<input id="atlas-checkbox" type="checkbox" checked /><span>Atlas</span>
+	<input id="connectogram-checkbox" type="checkbox" /><span>Connectogram</span>
+</div>
+
+<!-- panel overlap layer -->
+<div style="position:relative;clear:both;float:left;">
+
+<div id="atlas-panel" style="position:relative;float:left;padding:0px;">
+  <div id="canvas-container" style="padding:20px;float:left;">
+	<div id="container-y" class="figure" 
+		 style="margin:5px;width:181px;height:181px;position:relative;float:left;">
+	  <canvas id="display-y" class="slice-display"></canvas>
+  	  <img id="display-y-img-phony" src="images/mask-1-001.png" usemap="#map-1-90"
+		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
+	  <div style="display:none;margin:0px;width:181px;height:181px;">
+		<img id="display-y-img" src="images/imgseq-y.png">
+		<img id="display-y-img-bg" src="images/imgseq-y-bg.png">
+	  </div>
+	</div>
+	<div id="container-x" class="figure" 
+		 style="margin:5px;width:217px;height:181px;position:relative;margin-left:195px;">
+  	  <canvas id="display-x" class="slice-display"></canvas>
+  	  <img id="display-x-img-phony" src="images/mask-0-001.png" usemap="#map-0-90"
+		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
+  	  <div style="display:none;margin:0px;width:217px;height:181px;">
+  		<img id="display-x-img" src="images/imgseq-x.png">
+  		<img id="display-x-img-bg" src="images/imgseq-x-bg.png">
+  	  </div>
+	</div>
+	<div id="container-z" class="figure" 
+		 style="margin:5px;width:181px;height:217px;position:relative;clear:both;float:left;">
+  	  <canvas id="display-z" class="slice-display"></canvas>
+  	  <img id="display-z-img-phony" src="images/mask-2-001.png" usemap="#map-2-90"
+		   style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;">
+   	  <div style="display:none;margin:0px;width:181px;height:217px;">
+  		<img id="display-z-img" src="images/imgseq-z.png">
+  		<img id="display-z-img-bg" src="images/imgseq-z-bg.png">
+  	  </div>
+	</div>
+	<div style="padding-top:20px;margin-left:195px;">
+	  <button id="toggle-area-map">display labels</button><span id="status"></span><br>
+	  <button id="lessOpacity">-</button>
+	  <button id="moreOpacity">+</button><span id="opacity"></span><br>
+	  <button id="toggle-fiber">show fiber</button><span id="fiber-status">probabilistic</span><br>
+	  <span id="label"></span><br>
+	  <span id="log"></span><br>
+	  <span id="log2"></span><br>
+	  <p id="log_area" style="font-style:italic;width:200px;"></p>
+	</div>
+	<div id="map-container"></div>
+  </div>
+
+	<!-- fiber images -->
+	<div id="canvas-container-fiber" style="padding:20px;margin-left:450px;">
+		<div id="container-den" class="figure" 
+				 style="margin:5px;width:240px;height:200px;position:relative;float:left;">
+			<canvas id="display-den" class="slice-display" width="240px" height="200px"></canvas>
+			<canvas id="display-fib" class="slice-display" width="240px" height="200px" 
+							style="opacity:0;position:absolute;left:0px;top:0px;padding:0px;border:0px;"></canvas>
+			<!-- <div style="display:none;margin:0px;width:360px;height:300px;"></div> -->
+			<!-- <div style="display:none;margin:0px;width:360px;height:300px;"></div> -->
+		</div>
+		<div id="container-fun" class="figure" style="margin:5px;width:240px;height:200px;">
+			<canvas id="display-fun" class="slice-display" width="240px" height="200px"></canvas>
+			<!-- <div style="display:none;margin:0px;width:360px;height:300px;"></div> -->
+		</div>
+		<div id="imglist" style="display:none;margin:0px;"></div>
+	</div>
+
+	<!-- bar charts -->
+	<div style="padding:0px 0 0 0;clear:both;">
+		<div id="barchart_BDf_FDR05" 
+style="padding:0px;margin-left:0px;height:200px;width:50%;position:relative;clear:both;float:left;">
+		</div>
+		<div id="barchart_PCf_FDR05" 
+style="padding:0px;margin-left:300px;height:200px;width:50%;">
+		</div>
+	</div>
+
+	<!-- splash screen -->
+  <div>
+	<img id="display-splash" src="images/loading.gif"
+  		 style="opacity:1;position:absolute;left:20px;top:30px;padding:0px;border:0px;width:420px;">
+  </div>
+</div> 
+
+<!-- connectogram diaplay -->
+<div id="connectogram-panel" 
+		 style="position:relative;float:left;padding:10px 10px 1px 22px;display:none;">
+	<canvas id="display-cgram" width="3000px" height="3000px" style="width:680px;height:680px;"></canvas>
+	<!-- <img id="display-cgram-img" src="images/connectogram/001.png" -->
+	<!-- 		 style="width:640px;"> -->
+	<!-- position:relative;left:0px;top:0px;padding:0px;border:0px;display:none; -->
+</div>
+
+</div> <!-- panel overlap layer -->
+
+  <!-- copyright notice -->
+  <div style="margin:15px;position:relative;clear:both;float:left;">
+	  <span>Copyright (C) Brainnetome Center, CASIA</span>
+  </div>
+</div>
+		
+	</div> <!-- middle -->
+
+
+	<!-- footer -->
+	<div id="footer">
+		<div id="footer_nav">
+			<div id="nav_brainnetomeAtlasOverview"  class="children" style="width:210px;">
+				<h2>Brainnetome Atlas</h2>
+				<p>Brainnetome atlas will be an in vivo map, with more fine-grained functional brain subregions and detailed anatomical and functional connection patterns for each area, which could help researchers to
+	more accurately describe the locations of the activation or connectivity in the brain…<a href="brainnetome.html" style="color: #DDDDDD">more</a></p>
+			</div>
+			<div id="nav_getInTouch"  class="children">
+				<h2>Get in Touch</h2>
+				<p>Brainnetome Center
+				<p>National Laboratory of Pattern Recognition, Institute of Automation, The Chinese Academy of Sciences, 100190, PR China</p>
+				<p>Telephone: +(86) 010-8254 4778
+				<br>Fax:+ (86) 010-6255 1993
+				<br>Email:<a href ="mailto:brainnetome.atlas@nlpr.ia.ac.cn?subject=[Brainnetome Contact]">brainnetome.atlas@nlpr.ia.ac.cn </a></p>
+			</div>
+			<div id="nav_relatedDownload"  class="children">
+				<h2>Related Download</h2>
+				<ul>
+	      	<li><a href="http://www.nitrc.org/projects/bn_atlas" target="_blank">Brainnetome Atlas @NITRC</a></li>
+	        <li><a href="http://www.fil.ion.ucl.ac.uk/spm/ext/#Brainnetome" target="_blank">Brainnetome Atlas @SPM</a></li>
+	        <li><a href="http://atlas.brainnetome.org/BrainBrowser/SurfaceViewer.html" target="_blank">Brainnetome Atlas @BrainBrowser</a></li>
+			<li><a href="https://scalablebrainatlas.incf.org/human/BNA" target="_blank">Brainnetome Atlas @Scalable Brain Atlas</a></li>
+			  </ul>
+			</div>
+			<div id="nav_affiliations"  class="children">
+				<h2>Affiliations</h2>
+				<ul>
+	      	<li><a href="http://www.brainnetome.org/" target="_blank">Brainnetome Center</a></li>
+			    <li><a href="http://www.nlpr.ia.ac.cn/english/" target="_blank">National Laboratory of Pattern Recognition (NLPR)</a></li>
+			    <li><a href="http://www.ia.cas.cn/" target="_blank">Institute of Automation,The Chinese Academy of Sciences (CASIA)</a></li>
+			  </ul>
+			</div>
+			
+		</div>
+		
+	</div><!-- End footer -->
+	
+</div><!-- End site container -->
+
+
+<div id="footer_right">
+	 <p>Copyright © 2014 Brainnetome Center. Institute of Automation.Chinese Academy of Sciences. All rights reserved. (Browser: IE9 and above)</p>
+</div>
+
+</body>
+</html>
+
+

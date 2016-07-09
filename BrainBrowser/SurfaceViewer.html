@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link type="text/css" href="css/ui-darkness/jquery-ui-1.8.10.custom.css" rel="Stylesheet" />
+    <link type="text/css" href="css/common.css" rel="Stylesheet" />
+    <link type="text/css" href="css/jquery.treeview.css" rel="Stylesheet" />
+    <link type="text/css" href="css/surface-viewer-demo.css" rel="Stylesheet" />
+    <link rel="icon" type="image/png" href="img/brainbrowser.png">
+    <!-- all the scripts -->
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/lib/three.min.js"></script>
+    <script type="text/javascript" src="js/lib/AnaglyphEffect.js"></script>
+    <script type="text/javascript" src="js/ui/common.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.treeview.js"></script>
+    
+      <script type="text/javascript" src="js/brainbrowser/brainbrowser.surface-viewer.min.js"></script>
+      <script type="text/javascript" src="js/brainbrowser.surface-viewer.ui.min.js"></script>
+    
+    <script type="text/javascript" src="js/brainbrowser.config.js"></script> 
+    <script type="text/javascript" src="js/surface-viewer-demo.js"></script> 
+   
+    <title>BrainBrowser Surface Viewer v1.3.8</title>  
+     <script type="text/javascript">
+    $(document).ready(function(){
+    
+        $.fx.speeds._default = 1000;
+        $("#browse2").treeview({
+        	  persist: "location",
+        	  collapsed: true,
+        	  unique: true
+        });
+        
+        $("#subbrowse").treeview({
+        	collapsed: true,
+            unique: true
+            });
+        
+        var fanlingzhong={
+            "FPm_L"   :   "FPm_L",
+            "FPm_R"   :   "FPm_R",
+            "FPo_L"   :   "FPo_L",
+            "FPo_R"   :   "FPo_R",
+            "FPl_L"   :   "FPl_L",
+            "FPl_R"   :   "FPl_R",
+            "SFGam_L" :   "SFGam_L",
+            "SFGam_R" :   "SFGam_R",
+            "SFGdl_L" :   "SFGdl_L",
+            "SFGdl_R" :   "SFGdl_R",
+            "SFGp_L"  :   "SFGp_L",
+            "SFGp_R"  :   "SFGp_R",
+            "PMCda_L" :   "PMCda_L",
+            "PMCda_R" :   "PMCda_R",
+            "PMCdm_L" :   "PMCdm_L",
+            "PMCdm_R" :   "PMCdm_R",
+            "PMCdp_L" :   "PMCdp_L",
+            "PMCdp_R" :   "PMCdp_R",
+            "PMCvd_L" :   "PMCvd_L",
+            "PMCvd_R" :   "PMCvd_R",
+            "PMCvv_L" :   "PMCvv_L",
+            "PMCvv_R" :   "PMCvv_R",
+            "PFt_L"   :   "PFt_L",
+            "PFt_R"   :   "PFt_R",
+            "PFop_L"  :   "PFop_L",
+            "PFop_R"  :   "PFop_R",
+            "PFcm_L"  :   "PFcm",
+            "PFm_L"   :   "PFm_L",
+            "PFm_R"   :   "PFm_R",
+            "PGa_L"   :   "PGa_L",
+            "PGa_R"   :   "PGa_R",
+            "PGp_L"   :   "PGp_L",
+            "PGp_R"   :   "PGp_R",
+            "TAr_L"   :   "TAr_L",
+            "TAr_R"   :   "TAr_R",
+            "TGl_L"   :   "TGl_L",
+            "TGl_R"   :   "TGl_R",
+            "TGm_L"   :   "TGm_L",
+            "TGm_R"   :   "TGm_R"
+        };
+        /*
+        $(".file").click(function(){
+            var flz_name = $(this).attr("id");
+            if (flz_name in fanlingzhong){
+                //Update();
+                centeringAreasByTitle(fanlingzhong[flz_name]);
+                viewFiberByTitle(fanlingzhong[flz_name]);
+                Update();
+                highlightAreasByTitle(fanlingzhong[flz_name]);
+           }
+            else {
+                Update();
+            }
+        });
+        */
+        $(function() {
+            $( "#changeradio" ).buttonset();
+          });
+        $(function() {
+            $( "li[name='openfolder']" ).attr("class","open collapsable lastCollapsable");
+          });
+   
+    });
+    </script>
+  </head>  
+  <body>  
+      <!-- The webgl window and loading messages if any -->
+    <div id="display">
+      <h1 id="app-name">Surface Viewer</h1><a id="control-button" class="button">Hide Controls</a>
+      <!-- Loading image from: http://www.ajaxload.info/ -->
+      <div id="loading" style="display: none"><img src="img/ajax-loader.gif" /></div>
+      <div id="brainbrowser"></div>
+      <div id="controls">
+        <div id="controls-content">
+          <div id="examples" class="box full_box">
+            <h2>Brainnetome Atlas</h2>
+            	<div id="changeradio">
+    				<input type="radio" id="radio1" name="Type" value="Atlas" checked="checked"><label for="radio1">Atlas</label>
+    				<input type="radio" id="radio2" name="Type" value="FC" ><label for="radio2">Functional Connectivity</label>
+    				<input type="radio" id="radio3" name="Type" value="Fiber"><label for="radio3">Fiber Tracts</label>
+  				</div>
+			<p>
+              (Note: Please use the buttons below to change the opacity of the surfaces to show the fiber tracts)
+            </p> 
+  				<!-- 
+			 <ul>
+              <li><a href="#" class="example" data-example-name="0">Brainnetome atlas MPM</a></li>
+            </ul>
+			 -->
+			
+ <ul id="browse2" class="filetree">
+                <li class="open collapsable lastCollapsable" name="openfolder"><span class="folder" data-example-name="folder" ><b>CC</b> cerebral cortex </span>
+                    <ul>
+                    <li><span class="folder" data-example-name="folder"><b>FroL</b> frontal lobe</span>
+                        <ul>
+                        <li><span class="folder" data-example-name="folder"><b>FP</b> frontal pole</span>
+                            <ul>
+                            <li><span id="FPm_L" class="file"><a data-example-name="1"><b data-example-name="1">FPm_L</b>  medial FP</a></span></li>
+                            <li><span id="FPm_R" class="file"><a data-example-name="2"><b data-example-name="2">FPm_R</b>  medial FP</a></span></li>
+                            <li><span id="FPo_L" class="file"><a data-example-name="3"><b data-example-name="3">FPo_L</b>  orbital FP</a></span></li>
+                            <li><span id="FPo_R" class="file"><a data-example-name="4"><b data-example-name="4">FPo_R</b>  orbital FP</a></span></li>
+                            <li><span id="FPl_L" class="file"><a data-example-name="5"><b data-example-name="5">FPl_L</b>  lateral FP</a></span></li>
+                            <li><span id="FPl_R" class="file"><a data-example-name="6"><b data-example-name="6">FPl_R</b>  lateral FP</a></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="folder" data-example-name="folder"><b>SFG</b> superior frontal gyrus</span>
+                            <ul>
+                        <li><span id="SFGam_L" class="file"><a data-example-name="7"><b data-example-name="7">SFGam_L</b> anterior medial SFG </a> </span></li>
+                        <li><span id="SFGam_R" class="file"><a data-example-name="8"><b data-example-name="8">SFGam_R</b> anterior medial SFG </a> </span></li>
+                        <li><span id="SFGdl_L" class="file"><a data-example-name="9"><b data-example-name="9">SFGdl_L</b> dorsal lateral SFG </a> </span></li>
+                        <li><span id="SFGdl_R" class="file"><a data-example-name="10"><b data-example-name="10">SFGdl_R</b> dorsal lateral SFG </a> </span></li>
+                        <li><span id="SFGp_L" class="file"><a data-example-name="11"><b data-example-name="11">SFGp_L</b> posterior SFG</a></span></li>
+                        <li><span id="SFGp_R" class="file"><a data-example-name="12"><b data-example-name="12">SFGp_R</b> posterior SFG</a></span></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li><span class="folder" data-example-name="folder"><b>ParL</b>  parietal lobe</span>
+                    <ul>
+                    <li><span class="folder" data-example-name="folder"><b>PMC</b> posterior medial cortex</span>
+                        <ul>
+                        <li><span class="folder" data-example-name="folder"><b>PMCd</b> dorsal PMC</span>
+                            <ul>
+                            <li><span id="PMCda_L" class="file"><a data-example-name="13"><b data-example-name="13">PMCda_L</b> anterior PMCd</a></span></li>
+                            <li><span id="PMCda_R" class="file"><a data-example-name="14"><b data-example-name="14">PMCda_R</b> anterior PMCd</a></span></li>
+                            <li><span id="PMCdm_L" class="file"><a data-example-name="15"><b data-example-name="15">PMCdm_L</b> medial PMCd</a></span></li>
+                            <li><span id="PMCdm_R" class="file"><a data-example-name="16"><b data-example-name="16">PMCdm_R</b> medial PMCd</a></span></li>
+                            <li><span id="PMCdp_L" class="file"><a data-example-name="17"><b data-example-name="17">PMCdp_L</b> posterior PMCd</a></span></li>
+                            <li><span id="PMCdp_R" class="file"><a data-example-name="18"><b data-example-name="18">PMCdp_R</b> posterior PMCd</a></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="folder" data-example-name="folder"><b>PMCv</b> ventral PMC</span>
+                            <ul>
+                            <li><span id="PMCvd_L" class="file"><a data-example-name="19"><b data-example-name="19">PMCvd_L</b> dorsal PMCv</a></span></li>
+                            <li><span id="PMCvd_R" class="file"><a data-example-name="20"><b data-example-name="20">PMCvd_R</b> dorsal PMCv</a></span></li>
+                            <li><span id="PMCvv_L" class="file"><a data-example-name="21"><b data-example-name="21">PMCvv_L</b> ventral PMCv</a></span></li>
+                            <li><span id="PMCvv_R" class="file"><a data-example-name="22"><b data-example-name="22">PMCvv_R</b> ventral PMCv</a></span></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li><span class="folder" data-example-name="folder"><b>IPL</b> inferior parietal lobule</span>
+                        <ul>
+                        <li><span class="folder" data-example-name="folder"><b>SMG</b> supramarginal gyrus</span>
+                            <ul>
+                            <li><span id="PFt_L" class="file"><a data-example-name="23"><b data-example-name="23">PFt_L</b> dorsal SMG</a></span></li>
+                            <li><span id="PFt_R" class="file"><a data-example-name="24"><b data-example-name="24">PFt_R</b> dorsal SMG</a></span></li>
+                            <li><span id="PFop_L" class="file"><a data-example-name="25"><b data-example-name="25">PFop_L</b> ventral anterior SMG</a></span></li>
+                            <li><span id="PFop_R" class="file"><a data-example-name="26"><b data-example-name="26">PFop_R</b> ventral anterior SMG</a></span></li>
+                            <li><span id="PFcm_L" class="file"><a data-example-name="27"><b data-example-name="27">PFcm_L</b> ventral medial SMG</a></span></li>
+                            <li><span id="PFm_L" class="file"><a data-example-name="29"><b data-example-name="29">PFm_L</b> ventral posterior SMG</a></span></li>
+                            <li><span id="PFm_R" class="file"><a data-example-name="30"><b data-example-name="30">PFm_R</b> ventral posterior SMG</a></span></li>
+                            </ul>
+                        </li>
+                        <li><span class="folder" data-example-name="folder"><b>AG</b> angular gyrus</span>
+                            <ul>
+                            <li><span id="PGa_L" class="file"><a data-example-name="31"><b data-example-name="31">PGa_L</b> anterior AG</a></span></li>
+                            <li><span id="PGa_R" class="file"><a data-example-name="32"><b data-example-name="32">PGa_R</b> anterior AG</a></span></li>
+                            <li><span id="PGp_L" class="file"><a data-example-name="33"><b data-example-name="33">PGp_L</b> posterior AG</a></span></li>
+                            <li><span id="PGp_R" class="file"><a data-example-name="34"><b data-example-name="34">PGp_R</b> posterior AG</a></span></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li><span class="folder" data-example-name="folder"><b>TemL</b>  temporal lobe</span>
+                    <ul>
+                    <li><span class="folder" data-example-name="folder"><b>TP</b> temporal pole</span>
+                        <ul>
+                        <li><span id="TAr_L" class="file"><a data-example-name="35"><b data-example-name="35">TAr_L</b>  dorsal TP</a></span></li>
+                        <li><span id="TAr_R" class="file"><a data-example-name="36"><b data-example-name="36">TAr_R</b>  dorsal TP</a></span></li>
+                        <li><span id="TGl_L" class="file"><a data-example-name="37"><b data-example-name="37">TGl_L</b>  lateral TP</a></span></li>
+                        <li><span id="TGl_R" class="file"><a data-example-name="38"><b data-example-name="38">TGl_R</b>  lateral TP</a></span></li>
+                        <li><span id="TGm_L" class="file"><a data-example-name="39"><b data-example-name="39">TGm_L</b>  medial TP</a></span></li>
+                        <li><span id="TGm_R" class="file"><a data-example-name="40"><b data-example-name="40">TGm_R</b>  medial TP</a></span></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li><span class="folder" data-example-name="folder"><b>OccL</b>  occipital lobe</span></li>
+                <li><span class="folder" data-example-name="folder"><b>LimL</b>  limbic lobe</span></li>
+                <li><span class="folder" data-example-name="folder"><b>CING</b> cingulate gyrus</span></li>
+                <li><span class="folder" data-example-name="folder"><b>INS</b> insular cortex</span></li>
+                </ul>
+            </li>
+                <!--<li><span class="folder" data-example-name="folder"><b>CN</b>  cerebral nuclei</span>
+                    <ul>
+                    <li><span id="HIPP" class="file"><a data-example-name="11"><b>HIPP</b>  hippocampus</a></span></li>
+                    <li><span id="AMYG" class="file"><a data-example-name="11"><b>AMYG</b>  amygdala</a></span></li>
+                    <li><span id="STR" class="file"><a data-example-name="11"><b>STR</b>  striatum</a></span></li>
+                    <li><span id="THA" class="file"><a data-example-name="11"><b>THA</b>  thalamus</a></span></li>
+                    <li><span id="STN" class="file"><a data-example-name="11"><b>STN</b>  subthalamic nucleus</a></span></li>
+                    <li><span id="SN" class="file"><a data-example-name="11"><b>SN</b>  substantia nigra</a></span></li>
+                    </ul>
+                </li>-->
+                </ul>
+          </div>
+          <div id="surface_choice" class="box full_box">
+            <h4>Load your own data!</h4>
+            <p>
+              (Note: your data will remain on your computer and will not be transferred to the BrainBrowser server.)
+            </p>     
+              <div id="obj_file_select">
+                Object File:
+                <input type="file" name="objfile" id="objfile"><br>
+                Format: 
+                <select  id="obj_file_format" name="format">
+                  <option value="MNIObject">MNI OBJ</option>
+                  <option value="WavefrontObj">Wavefront OBJ</option>
+                  <option value="FreeSurferAsc">Freesurfer ASC</option>
+                </select><br>
+                <div id="format_hint"></div>
+                <div id="obj_file_submit_div">
+                  <span id="obj_file_submit" class="button">Load</span><br>
+                </div>
+              </div>
+              <p>
+                Data 1: <input type="file" name="datafile1" id="datafile1" class="datafile"><br />
+                Data 2: <input type="file" name="datafile2" id="datafile2" class="datafile"> <br />
+                Color Map: <input type="file" name="color-map" id="color-map"><br />
+              </p>
+              <span id="clearshapes" class="button">Clear Shapes</span>
+          </div>
+          <div id="color-map-box" class="box full_box">
+            Color Map: 
+              
+          </div>
+          
+          <div id="data-range-box" class="box full_box">
+            <h4>Thresholding</h4>
+            <div id="data-range">
+            </div>
+            <div id="blend-box"></div>
+          </div>
+          <div id="background_select" class="box full_box">
+            <h4>Background Color:</h4>
+<select id="clear_color"> 
+  <option value="0x000000">Black</option>
+  <option value="0x888888">Gray</option>
+  <option value="0xffffff">White</option>
+  <option value="0xff0000">Red</option>
+  <option value="0x00ff00">Green</option>
+  <option value="0x0000ff">Blue</option>
+  <option value="0x00ffff">Cyan</option>
+  <option value="0xff00ff">Magenta</option>
+  <option value="0xffff00">Yellow</option>
+  <optgroup label="----------"></optgroup>
+  <option value="0xf0f8ff">Alice Blue</option>
+  <option value="0xfaebd7">Antique White</option>
+  <option value="0x7fffd4">Aquamarine</option>
+  <option value="0xf0ffff">Azure</option>
+  <option value="0xf5f5dc">Beige</option>
+  <option value="0xffe4c4">Bisque</option>
+  <option value="0xffebcd">Blanched Almond</option>
+  <option value="0x8a2be2">Blue Violet</option>
+  <option value="0xa52a2a">Brown</option>
+  <option value="0xdeb887">Burlywood</option>
+  <option value="0x5f9ea0">Cadet Blue</option>
+  <option value="0x98f5ff">Cadet Blue</option>
+  <option value="0x7fff00">Chartreuse</option>
+  <option value="0xd2691e">Chocolate</option>
+  <option value="0xff7f50">Coral</option>
+  <option value="0x6495ed">Cornflower Blue</option>
+  <option value="0xfff8dc">Cornsilk</option>
+  <option value="0xb8860b">Dark Goldenrod</option>
+  <option value="0x006400">Dark Green</option>
+  <option value="0xbdb76b">Dark Khaki</option>
+  <option value="0x556b2f">Dark Olive Green</option>
+  <option value="0xff8c00">Dark Orange</option>
+  <option value="0x9932cc">Dark Orchid</option>
+  <option value="0xe9967a">Dark Salmon</option>
+  <option value="0x8fbc8f">Dark Sea Green</option>
+  <option value="0x483d8b">Dark Slate Blue</option>
+  <option value="0x2f4f4f">Dark Slate Gray</option>
+  <option value="0x00ced1">Dark Turquoise</option>
+  <option value="0x9400d3">Dark Violet</option>
+  <option value="0xff1493">Deep Pink</option>
+  <option value="0x00bfff">Deep Sky Blue</option>
+  <option value="0x696969">Dim Gray</option>
+  <option value="0x1e90ff">Dodger Blue</option>
+  <option value="0xb22222">Firebrick</option>
+  <option value="0xfffaf0">Floral White</option>
+  <option value="0x228b22">Forest Green</option>
+  <option value="0xdcdcdc">Gainsboro</option>
+  <option value="0xf8f8ff">Ghost White</option>
+  <option value="0xffd700">Gold</option>
+  <option value="0xdaa520">Goldenrod</option>
+  <option value="0xadff2f">Green Yellow</option>
+  <option value="0xf0fff0">Honeydew</option>
+  <option value="0xff69b4">Hot Pink</option>
+  <option value="0xcd5c5c">Indian Red</option>
+  <option value="0xfffff0">Ivory</option>
+  <option value="0xf0e68c">Khaki</option>
+  <option value="0xe6e6fa">Lavender</option>
+  <option value="0xfff0f5">Lavender Blush</option>
+  <option value="0x7cfc00">Lawn Green</option>
+  <option value="0xfffacd">Lemon Chiffon</option>
+  <option value="0xeedd82">Light</option>
+  <option value="0xadd8e6">Light Blue</option>
+  <option value="0xf08080">Light Coral</option>
+  <option value="0xe0ffff">Light Cyan</option>
+  <option value="0xffec8b">Light Goldenrod</option>
+  <option value="0xfafad2">Light Goldenrod Yellow</option>
+  <option value="0xd3d3d3">Light Gray</option>
+  <option value="0xffb6c1">Light Pink</option>
+  <option value="0xffa07a">Light Salmon</option>
+  <option value="0x20b2aa">Light Sea Green</option>
+  <option value="0x87cefa">Light Sky Blue</option>
+  <option value="0x8470ff">Light Slate Blue</option>
+  <option value="0x778899">Light Slate Gray</option>
+  <option value="0xb0c4de">Light Steel Blue</option>
+  <option value="0xffffe0">Light Yellow</option>
+  <option value="0x32cd32">Lime Green</option>
+  <option value="0xfaf0e6">Linen</option>
+  <option value="0xb03060">Maroon</option>
+  <option value="0x66cdaa">Medium</option>
+  <option value="0x66cdaa">Medium Aquamarine</option>
+  <option value="0x0000cd">Medium Blue</option>
+  <option value="0xba55d3">Medium Orchid</option>
+  <option value="0x9370db">Medium Purple</option>
+  <option value="0x3cb371">Medium Sea Green</option>
+  <option value="0x7b68ee">Medium Slate Blue</option>
+  <option value="0x00fa9a">Medium Spring Green</option>
+  <option value="0x48d1cc">Medium Turquoise</option>
+  <option value="0xc71585">Medium Violet Red</option>
+  <option value="0x191970">Midnight Blue</option>
+  <option value="0xf5fffa">Mint Cream</option>
+  <option value="0xffe4e1">Misty Rose</option>
+  <option value="0xffe4b5">Moccasin</option>
+  <option value="0xffdead">Navajo White</option>
+  <option value="0x000080">Navy Blue</option>
+  <option value="0xfdf5e6">Old Lace</option>
+  <option value="0x6b8e23">Olive Drab</option>
+  <option value="0xffa500">Orange</option>
+  <option value="0xff4500">Orange Red</option>
+  <option value="0xda70d6">Orchid</option>
+  <option value="0xdb7093">Pale</option>
+  <option value="0xeee8aa">Pale Goldenrod</option>
+  <option value="0x98fb98">Pale Green</option>
+  <option value="0xafeeee">Pale Turquoise</option>
+  <option value="0xdb7093">Pale Violet Red</option>
+  <option value="0xffefd5">Papaya Whip</option>
+  <option value="0xffdab9">Peach Puff</option>
+  <option value="0xffc0cb">Pink</option>
+  <option value="0xdda0dd">Plum</option>
+  <option value="0xb0e0e6">Powder Blue</option>
+  <option value="0xa020f0">Purple</option>
+  <option value="0xbc8f8f">Rosy Brown</option>
+  <option value="0x4169e1">Royal Blue</option>
+  <option value="0x8b4513">Saddle Brown</option>
+  <option value="0xfa8072">Salmon</option>
+  <option value="0xf4a460">Sandy Brown</option>
+  <option value="0x54ff9f">Sea Green</option>
+  <option value="0xfff5ee">Seashell</option>
+  <option value="0xa0522d">Sienna</option>
+  <option value="0x87ceeb">Sky Blue</option>
+  <option value="0x6a5acd">Slate Blue</option>
+  <option value="0x708090">Slate Gray</option>
+  <option value="0xfffafa">Snow</option>
+  <option value="0x00ff7f">Spring Green</option>
+  <option value="0x4682b4">Steel Blue</option>
+  <option value="0xd2b48c">Tan</option>
+  <option value="0xd8bfd8">Thistle</option>
+  <option value="0xff6347">Tomato</option>
+  <option value="0x40e0d0">Turquoise</option>
+  <option value="0xee82ee">Violet</option>
+  <option value="0xd02090">Violet Red</option>
+  <option value="0xf5deb3">Wheat</option>
+  <option value="0xf5f5f5">White Smoke</option>
+  <option value="0x9acd32">Yellow Green</option>
+</select>
+
+          </div>
+          <div class="combo_box">
+            <div id="views" class="box half_box" >
+              <h4>Views:</h4>
+<div id="hem_views_1" class="half_box">
+  <input id="left_hem_visible" class="visibility" data-hemisphere="left" type="checkbox" checked="true">Left 
+  <br />
+  <input id="hem_superior" class="view_button" type="radio" name="hem_view" value="superior" checked="true">Superior
+
+  <br />
+  <input id="hem_medial" class="view_button" type="radio" name="hem_view" value="medial">Medial
+
+  <br />
+  <input id="hem_anterior" class="view_button" type="radio" name="hem_view" value="anterior">Anterior
+
+</div>
+<div id="hem_views_2" class="half_box">
+  <input id="right_hem_visible" class="visibility" data-hemisphere="right" type="checkbox" checked="true">Right<br />
+  <input id="hem_inferior" class="view_button" type="radio" name="hem_view" value="inferior">Inferior      
+  <br />
+  <input id="hem_lateral" class="view_button" type="radio" name="hem_view" value="lateral">Lateral
+  <br />
+  <input id="hem_posterior" class="view_button" type="radio" name="hem_view" value="posterior">Posterior
+</div>
+<p>
+  Autorotate: 
+  <span id="autorotate-controls" class="buttonset">
+    <input type="checkbox"  id="autorotateX"><label for="autorotateX">X</label>
+    <input type="checkbox"  id="autorotateY"><label for="autorotateY">Y</label>
+    <input type="checkbox"  id="autorotateZ"><label for="autorotateZ">Z</label>
+  </span>
+</p>
+<p>
+  <a class="button" id="resetview">Reset View</a>
+  <input type="checkbox" class="button" id="meshmode"><label for="meshmode">Mesh Mode</label>
+</p>
+<p>
+  <input type="checkbox" class="button" id="threedee"><label for="threedee">3D Glasses!</label>
+  <span id="openImage" class="button">Screenshot</span>
+</p>
+
+
+            </div>
+            <div id="shape-cell" class="box half_box">
+              <div id="shapes">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>  
+</html>
