@@ -84,7 +84,7 @@ window.addEventListener("load",function()
 		$treeview.jstree({
 			'core' : {
 				'data' : {
-					"url" : "js/bnatlasviewer/bnatlas_tree_new.json",
+					"url" : "js/bnatlasviewer/bnatlas_tree.json",
 					"dataType" : "json" // needed only if you do not supply JSON headers
 				}
 			},
