@@ -56,7 +56,7 @@ window.addEventListener("load",function()
 
   function loadLabelMaps()
 	{
-		$.ajax("labelmaps.txt").done(function(responseText){
+		$.ajax("labelmaps_new.txt").done(function(responseText){
 			$("#map-container").html(responseText);
 
 			handler("display-x");
@@ -84,7 +84,7 @@ window.addEventListener("load",function()
 		$treeview.jstree({
 			'core' : {
 				'data' : {
-					"url" : "js/bnatlasviewer/bnatlas_tree.json",
+					"url" : "js/bnatlasviewer/bnatlas_tree_new.json",
 					"dataType" : "json" // needed only if you do not supply JSON headers
 				}
 			},
