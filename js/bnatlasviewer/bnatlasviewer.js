@@ -56,7 +56,7 @@ window.addEventListener("load",function()
 
   function loadLabelMaps()
 	{
-		$.ajax("labelmaps_new.txt").done(function(responseText){
+		$.ajax("js/bnatlasviewer/labelmaps_new.txt").done(function(responseText){
 			$("#map-container").html(responseText);
 
 			handler("display-x");
