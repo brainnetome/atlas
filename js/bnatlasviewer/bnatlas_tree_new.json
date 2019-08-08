@@ -2438,7 +2438,7 @@
 {
 "text":"A7r_l",
 "data":{
-"alias":"A7ip, intraparietal area 7(hIP3)",
+"alias":"A7r, rostral area 7",
 "cgram":[
 419,
 1908,
@@ -2457,7 +2457,7 @@
 {
 "text":"A7r_r",
 "data":{
-"alias":"A7ip, intraparietal area 7(hIP3)",
+"alias":"A7r, rostral area 7",
 "cgram":[
 2578,
 1914,
@@ -2590,7 +2590,7 @@
 {
 "text":"A7ip_l",
 "data":{
-"alias":"A7r, rostral area 7",
+"alias":"A7ip, intraparietal area 7(hIP3)",
 "cgram":[
 463,
 2009,
@@ -2609,7 +2609,7 @@
 {
 "text":"A7ip_r",
 "data":{
-"alias":"A7r, rostral area 7",
+"alias":"A7ip, intraparietal area 7(hIP3)",
 "cgram":[
 2534,
 2015,
