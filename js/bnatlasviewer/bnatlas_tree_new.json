@@ -2459,14 +2459,14 @@
 "data":{
 "alias":"A7r, rostral area 7",
 "cgram":[
-2578,
-1914,
-2568,
-1939,
-2679,
-1985,
-2690,
-1957
+2534,
+2015,
+2521,
+2039,
+2628,
+2095,
+2641,
+2068
 ]
 },
 "id":"126",
@@ -2514,7 +2514,7 @@
 {
 "text":"A5l_l",
 "data":{
-"alias":"A7pc, postcentral area 7",
+"alias":"A5l, lateral area 5",
 "cgram":[
 440,
 1959,
@@ -2533,7 +2533,7 @@
 {
 "text":"A5l_r",
 "data":{
-"alias":"A7pc, postcentral area 7",
+"alias":"A5l, lateral area 5",
 "cgram":[
 2557,
 1965,
@@ -2552,7 +2552,7 @@
 {
 "text":"A7pc_l",
 "data":{
-"alias":"A5l, lateral area 5",
+"alias":"A7pc, postcentral area 7",
 "cgram":[
 451,
 1984,
@@ -2571,7 +2571,7 @@
 {
 "text":"A7pc_r",
 "data":{
-"alias":"A5l, lateral area 5",
+"alias":"A7pc, postcentral area 7",
 "cgram":[
 2546,
 1990,
@@ -2611,14 +2611,14 @@
 "data":{
 "alias":"A7ip, intraparietal area 7(hIP3)",
 "cgram":[
-2534,
-2015,
-2521,
-2039,
-2628,
-2095,
-2641,
-2068
+2578,
+1914,
+2568,
+1939,
+2679,
+1985,
+2690,
+1957
 ]
 },
 "id":"134",
